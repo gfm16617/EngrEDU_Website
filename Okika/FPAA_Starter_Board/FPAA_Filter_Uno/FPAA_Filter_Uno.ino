@@ -4,8 +4,6 @@
 #define SELb 10
 #define ACLK 3
 
-int incomingByte; // for incoming serial data
-
 void resetConfig(){
   // State Reconfiguration
   byte msg[9] = {0, 0, 0, 0, 0, 213, 1, 111, 0};
@@ -48,9 +46,6 @@ void setup() {
   
   resetConfig();
   sendConfig();
-  
-  // Initialize Serial
-  Serial.begin(57600);
 }
 
 void loop() {
