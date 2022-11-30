@@ -80,7 +80,7 @@ blocks:
     phase: '0'
     samp_rate: samp_rate
     type: complex
-    waveform: analog.GR_SIN_WAVE
+    waveform: analog.GR_TRI_WAVE
   states:
     bus_sink: false
     bus_source: false
