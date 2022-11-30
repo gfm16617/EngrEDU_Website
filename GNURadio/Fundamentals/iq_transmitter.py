@@ -89,11 +89,11 @@ class iq_transmitter(gr.top_block, Qt.QWidget):
         self._i_value_range = Range(0, 3, 0.1, 1, 200)
         self._i_value_win = RangeWidget(self._i_value_range, self.set_i_value, "I Value", "counter_slider", float, QtCore.Qt.Horizontal)
         self.top_layout.addWidget(self._i_value_win)
-        self.qtgui_time_sink_x_0 = qtgui.time_sink_f(
+        self.qtgui_time_sink_x_0 = qtgui.time_sink_c(
             1024, #size
             samp_rate, #samp_rate
             "", #name
-            3, #number of inputs
+            1, #number of inputs
             None # parent
         )
         self.qtgui_time_sink_x_0.set_update_time(0.010)
@@ -110,11 +110,11 @@ class iq_transmitter(gr.top_block, Qt.QWidget):
         self.qtgui_time_sink_x_0.enable_stem_plot(False)
 
 
-        labels = ['Signal 1', 'Signal 2', 'Signal 3', 'Signal 4', 'Signal 5',
+        labels = ['I Channel', 'Q Channel', 'Q Channel', 'Signal 4', 'Signal 5',
             'Signal 6', 'Signal 7', 'Signal 8', 'Signal 9', 'Signal 10']
         widths = [1, 1, 1, 1, 1,
             1, 1, 1, 1, 1]
-        colors = ['blue', 'red', 'green', 'black', 'cyan',
+        colors = ['blue', 'green', 'red', 'black', 'cyan',
             'magenta', 'yellow', 'dark red', 'dark green', 'dark blue']
         alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
             1.0, 1.0, 1.0, 1.0, 1.0]
@@ -124,9 +124,12 @@ class iq_transmitter(gr.top_block, Qt.QWidget):
             -1, -1, -1, -1, -1]
 
 
-        for i in range(3):
+        for i in range(2):
             if len(labels[i]) == 0:
-                self.qtgui_time_sink_x_0.set_line_label(i, "Data {0}".format(i))
+                if (i % 2 == 0):
+                    self.qtgui_time_sink_x_0.set_line_label(i, "Re{{Data {0}}}".format(i/2))
+                else:
+                    self.qtgui_time_sink_x_0.set_line_label(i, "Im{{Data {0}}}".format(i/2))
             else:
                 self.qtgui_time_sink_x_0.set_line_label(i, labels[i])
             self.qtgui_time_sink_x_0.set_line_width(i, widths[i])
@@ -137,10 +140,10 @@ class iq_transmitter(gr.top_block, Qt.QWidget):
 
         self._qtgui_time_sink_x_0_win = sip.wrapinstance(self.qtgui_time_sink_x_0.qwidget(), Qt.QWidget)
         self.top_layout.addWidget(self._qtgui_time_sink_x_0_win)
-        self.blocks_throttle_0 = blocks.throttle(gr.sizeof_float*1, samp_rate,True)
+        self.blocks_throttle_0 = blocks.throttle(gr.sizeof_gr_complex*1, samp_rate,True)
         self.blocks_multiply_xx_0_0 = blocks.multiply_vff(1)
         self.blocks_multiply_xx_0 = blocks.multiply_vff(1)
-        self.blocks_add_xx_0 = blocks.add_vff(1)
+        self.blocks_float_to_complex_0 = blocks.float_to_complex(1)
         self.analog_sig_source_x_0_0 = analog.sig_source_f(samp_rate, analog.GR_SIN_WAVE, 1000, 1, 0, 0)
         self.analog_sig_source_x_0 = analog.sig_source_f(samp_rate, analog.GR_COS_WAVE, 1000, 1, 0, 0)
         self.analog_const_source_x_0_0 = analog.sig_source_f(0, analog.GR_CONST_WAVE, 0, 0, q_value)
@@ -154,12 +157,10 @@ class iq_transmitter(gr.top_block, Qt.QWidget):
         self.connect((self.analog_const_source_x_0_0, 0), (self.blocks_multiply_xx_0_0, 0))
         self.connect((self.analog_sig_source_x_0, 0), (self.blocks_multiply_xx_0, 0))
         self.connect((self.analog_sig_source_x_0_0, 0), (self.blocks_multiply_xx_0_0, 1))
-        self.connect((self.blocks_add_xx_0, 0), (self.blocks_throttle_0, 0))
-        self.connect((self.blocks_multiply_xx_0, 0), (self.blocks_add_xx_0, 0))
-        self.connect((self.blocks_multiply_xx_0, 0), (self.qtgui_time_sink_x_0, 0))
-        self.connect((self.blocks_multiply_xx_0_0, 0), (self.blocks_add_xx_0, 1))
-        self.connect((self.blocks_multiply_xx_0_0, 0), (self.qtgui_time_sink_x_0, 2))
-        self.connect((self.blocks_throttle_0, 0), (self.qtgui_time_sink_x_0, 1))
+        self.connect((self.blocks_float_to_complex_0, 0), (self.blocks_throttle_0, 0))
+        self.connect((self.blocks_multiply_xx_0, 0), (self.blocks_float_to_complex_0, 0))
+        self.connect((self.blocks_multiply_xx_0_0, 0), (self.blocks_float_to_complex_0, 1))
+        self.connect((self.blocks_throttle_0, 0), (self.qtgui_time_sink_x_0, 0))
 
 
     def closeEvent(self, event):
