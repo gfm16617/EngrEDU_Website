@@ -509,9 +509,9 @@ blocks:
     entags: 'True'
     grid: 'False'
     gui_hint: ''
-    label1: Signal 1
+    label1: Original Signal
     label10: Signal 10
-    label2: Signal 2
+    label2: Demodulated Signal
     label3: Signal 3
     label4: Signal 4
     label5: Signal 5
