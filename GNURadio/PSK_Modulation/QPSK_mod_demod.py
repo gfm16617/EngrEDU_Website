@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: GPL-3.0
 #
 # GNU Radio Python Flow Graph
-# Title: BPSK Example
+# Title: QPSK Example
 # Description: https://aaronscher.com/GNU_Radio_Companion_Collection/BPSK_mod_demod.html
 # GNU Radio version: 3.10.3.0
 
@@ -42,12 +42,12 @@ from PyQt5 import QtCore
 
 from gnuradio import qtgui
 
-class top_block(gr.top_block, Qt.QWidget):
+class QPSK_mod_demod(gr.top_block, Qt.QWidget):
 
     def __init__(self):
-        gr.top_block.__init__(self, "BPSK Example", catch_exceptions=True)
+        gr.top_block.__init__(self, "QPSK Example", catch_exceptions=True)
         Qt.QWidget.__init__(self)
-        self.setWindowTitle("BPSK Example")
+        self.setWindowTitle("QPSK Example")
         qtgui.util.check_set_qss()
         try:
             self.setWindowIcon(Qt.QIcon.fromTheme('gnuradio-grc'))
@@ -65,7 +65,7 @@ class top_block(gr.top_block, Qt.QWidget):
         self.top_grid_layout = Qt.QGridLayout()
         self.top_layout.addLayout(self.top_grid_layout)
 
-        self.settings = Qt.QSettings("GNU Radio", "top_block")
+        self.settings = Qt.QSettings("GNU Radio", "QPSK_mod_demod")
 
         try:
             if StrictVersion(Qt.qVersion()) < StrictVersion("5.0.0"):
@@ -373,7 +373,7 @@ class top_block(gr.top_block, Qt.QWidget):
 
 
     def closeEvent(self, event):
-        self.settings = Qt.QSettings("GNU Radio", "top_block")
+        self.settings = Qt.QSettings("GNU Radio", "QPSK_mod_demod")
         self.settings.setValue("geometry", self.saveGeometry())
         self.stop()
         self.wait()
@@ -442,7 +442,7 @@ class top_block(gr.top_block, Qt.QWidget):
 
 
 
-def main(top_block_cls=top_block, options=None):
+def main(top_block_cls=QPSK_mod_demod, options=None):
 
     if StrictVersion("4.5.0") <= StrictVersion(Qt.qVersion()) < StrictVersion("5.0.0"):
         style = gr.prefs().get_string('qtgui', 'style', 'raster')
