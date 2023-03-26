@@ -34,8 +34,22 @@ Clock_v2
 - Pins were adjusted according to PCB Design (DIG1..4 and DS/SH_CP)
 - fully functional
 
+FreeRTOS_Example_1
+- set 3 tasks running in parallel
+  - Serial task
+  - Blink Red LED Task
+  - Blink Green LED Task
+
+FreeRTOS_Example_2
+- test the use of queues to change information between tasks
+
+Clock_FreeRTOS
+- Implementatino of Clock_v2 with FreeRTOS
+
+
 *****************************
 With FreeRTOS
+https://circuitdigest.com/microcontroller-projects/arduino-freertos-tutorial1-creating-freertos-task-to-blink-led-in-arduino-uno
 https://wiki.seeedstudio.com/Software-FreeRTOS/
 
 Own Scheduler

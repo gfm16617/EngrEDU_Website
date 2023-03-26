@@ -3,8 +3,8 @@
 // https://www.arduino.cc/reference/de/language/functions/external-interrupts/attachinterrupt/
 // https://microcontrollerslab.com/arduino-timer-interrupts-tutorial/
 
-#define BUTTON_1  2  // Start/Stop Timer and Stop Buzzer
-#define BUTTON_2  3  // Inc Timer
+#define BUTTON_2  2  // Inc Timer
+#define BUTTON_1  3  // Start/Stop Timer and Stop Buzzer
 #define GREEN_LED 4
 #define RED_LED   5
 #define BUZZER    6
@@ -25,7 +25,7 @@ unsigned char table[]=
 byte current_digit;
 
 // Volatile Variables
-volatile unsigned char isr_2_flag = 0;
+volatile unsigned char isr_1_flag = 0;
 volatile unsigned char buzzer_flag = 0;
 
 // Timer Variables
@@ -100,16 +100,16 @@ void disp_off()
    digitalWrite(DIGIT_4, HIGH);
 }
 
-void Button_1_ISR()
+void Button_2_ISR()
 {
   // Increment Clock
   count++;
 }
 
-void Button_2_ISR()
+void Button_1_ISR()
 { 
   // Set ISR Flag
-  isr_2_flag = 1;
+  isr_1_flag = 1;
 }
 
 ISR(TIMER2_COMPA_vect)   // Timer2 interrupt service routine (ISR)
@@ -151,8 +151,10 @@ ISR(TIMER1_COMPA_vect)  // Timer1 interrupt service routine (ISR)
   {
       // Stop Timer
       stopTimer1();
+      
       // Raise Alarm
       buzzer_flag = 1;
+      timer_running = 0;
   }
 }
 
@@ -194,10 +196,10 @@ void Active_Buzzer()
 void loop() 
 {
   // Attend Button 2 ISR
-  if(isr_2_flag == 1)
+  if(isr_1_flag == 1)
   {
     // Reset ISR Flag
-    isr_2_flag = 0;
+    isr_1_flag = 0;
 
     if(timer_running == 0)
     {
