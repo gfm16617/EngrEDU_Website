@@ -1,8 +1,4 @@
 
-Old_Kitchen_Timer_Board
-- Students can try to figure out what is the issue by running the code on this board
-
-
 NoConcurrency
 - 4 tasks running in a polling method (not efficient at all)
 
@@ -51,11 +47,4 @@ Clock_FreeRTOS
 - Implementatino of Clock_v2 with FreeRTOS
 
 
-*****************************
-With FreeRTOS
-https://circuitdigest.com/microcontroller-projects/arduino-freertos-tutorial1-creating-freertos-task-to-blink-led-in-arduino-uno
-https://wiki.seeedstudio.com/Software-FreeRTOS/
-
-Own Scheduler
-https://roboticsbackend.com/how-to-do-multitasking-with-arduino/
 
