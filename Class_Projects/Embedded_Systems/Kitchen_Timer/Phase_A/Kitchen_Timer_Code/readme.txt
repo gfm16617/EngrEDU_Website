@@ -20,8 +20,6 @@ SimpleCounter
 ImprovedCounter [DeBounce todo]
 - address the debounce problem by software
 - there are pros and cons with this approach
-- https://hackaday.com/2015/12/09/embed-with-elliot-debounce-your-noisy-buttons-part-i/
-- https://www.digikey.com/en/articles/how-to-implement-hardware-debounce-for-switches-and-relays
 
 Clock_v1
 - counts in seconds
