@@ -23,30 +23,30 @@ void my_pinMode(NotMappedPort_e NotMappedPort, uint8_t mode)
   {
     case PB0:
       if(mode == OUTPUT)
-        DDRB = DDRB | B00000001;  // PD5 as Output
+        DDRB = DDRB | B00000001;  // PB0 as Output
       else
-        DDRB = DDRB & B11111110;  // PD5 as Input
+        DDRB = DDRB & B11111110;  // PB0 as Input
       break;
       
     case PB1:
       if(mode == OUTPUT)
-        DDRB = DDRB | B00000010;  // PD5 as Output
+        DDRB = DDRB | B00000010;  // PB1 as Output
       else
-        DDRB = DDRB & B11111101;  // PD5 as Input
+        DDRB = DDRB & B11111101;  // PB1 as Input
       break;
       
     case PB2:
       if(mode == OUTPUT)
-        DDRB = DDRB | B00000100;  // PD5 as Output
+        DDRB = DDRB | B00000100;  // PB2 as Output
       else
-        DDRB = DDRB & B11111011;  // PD5 as Input
+        DDRB = DDRB & B11111011;  // PB2 as Input
       break;
       
     case PB3:
       if(mode == OUTPUT)
-        DDRB = DDRB | B00001000;  // PD5 as Output
+        DDRB = DDRB | B00001000;  // PB3 as Output
       else
-        DDRB = DDRB & B11110111;  // PD5 as Input
+        DDRB = DDRB & B11110111;  // PB3 as Input
       break;
       
     case PD5:
