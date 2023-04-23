@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "PTS526_SMD_Button")(type "KiCad")(uri "${KIPRJMOD}/Components/PTS526_SMD_Button/PTS526_SMD_Button.pretty")(options "")(descr ""))
+  (lib (name "PTS125_SMD_Button")(type "KiCad")(uri "${KIPRJMOD}/Components/PTS125_SMD_Button/PTS125_SMD_Button.pretty")(options "")(descr ""))
+)
