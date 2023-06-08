@@ -33,11 +33,11 @@ void setup() {
 }
 
 /**
- * @brief Timer 1 ISR
- * @param TIMER1_COMPA_vect
+ * @brief Timer 2 ISR
+ * @param TIMER2_COMPA_vect
  * @return
  */
-ISR(TIMER2_COMPA_vect)  // Timer1 interrupt service routine (ISR)
+ISR(TIMER2_COMPA_vect)  // Timer2 interrupt service routine (ISR)
 {
   gISRFlag1 = 1;
 }
