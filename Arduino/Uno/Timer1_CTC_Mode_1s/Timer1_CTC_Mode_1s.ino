@@ -3,7 +3,7 @@
 // Volatile Variables
 volatile unsigned char gISRFlag1   = 0;
 
-unsigned int gTimerCounter = 62500;
+unsigned int gTimerCounter = 62500;  // 1sec
 char toggled = 0;
 
 /**
@@ -15,7 +15,7 @@ void setup() {
   // LEDs Pins
   pinMode(LED, OUTPUT);
   
-  // Initialize Timer1 (16bit) -> Used for clock
+  // Initialize Timer1 (16bit)
   // Speed of Timer1 = 16MHz/256 = 62.5 KHz
   noInterrupts();
   TCCR1A = 0;

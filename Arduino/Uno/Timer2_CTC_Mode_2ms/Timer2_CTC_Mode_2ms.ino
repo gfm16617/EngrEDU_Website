@@ -1,9 +1,9 @@
-#define LED  13 
+#define LED  2 
 
 // Volatile Variables
 volatile unsigned char gISRFlag1   = 0;
 
-unsigned int gTimerCounter = 250;  //1ms
+byte gTimerCounter = 125;  //2ms
 char toggled = 0;
 
 /**
@@ -19,16 +19,16 @@ void setup() {
   uint32_t cpuFrequency = F_CPU;
   Serial.println(cpuFrequency);
   
-  // Initialize Timer1 (16bit) -> Used for clock
-  // Speed of Timer1 = 16MHz/64 = 250 KHz
+  // Initialize Timer2 (8bit)
+  // Speed of Timer2 = 16MHz/256 = 62.5 KHz
   noInterrupts();
-  TCCR1A = 0;
-  TCCR1B = 0;
-  OCR1A = gTimerCounter; // compare match register 16MHz/256
-  TCCR1B |= (1<<WGM12);   // CTC mode
+  TCCR2A = 0;
+  TCCR2B = 0;
+  OCR2A = gTimerCounter; // compare match register 16MHz/256
+  TCCR2A |= (1<<WGM21);   // CTC mode
   // Start Timer by setting the prescaler
-  TCCR1B |= (1<<CS11) | (1<<CS10);    // 64 prescaler 
-  TIMSK1 |= (1<<OCIE1A);  // enable timer compare interrupt
+  TCCR2B |= (1<<CS22) | (1<<CS21);    // 256 prescaler 
+  TIMSK2 |= (1<<OCIE2A);  // enable timer compare interrupt
   interrupts();
 }
 
@@ -37,7 +37,7 @@ void setup() {
  * @param TIMER1_COMPA_vect
  * @return
  */
-ISR(TIMER1_COMPA_vect)  // Timer1 interrupt service routine (ISR)
+ISR(TIMER2_COMPA_vect)  // Timer1 interrupt service routine (ISR)
 {
   gISRFlag1 = 1;
 }

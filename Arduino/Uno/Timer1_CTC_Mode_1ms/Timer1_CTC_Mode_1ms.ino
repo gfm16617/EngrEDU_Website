@@ -15,12 +15,12 @@ void setup() {
   // LEDs Pins
   pinMode(LED, OUTPUT);
   
-  // Initialize Timer1 (16bit) -> Used for clock
+  // Initialize Timer1 (16bit)
   // Speed of Timer1 = 16MHz/8 = 2MHz
   noInterrupts();
   TCCR1A = 0;
   TCCR1B = 0;
-  OCR1A = gTimerCounter; // compare match register 16MHz/256
+  OCR1A = gTimerCounter; // compare match register 16MHz/8
   TCCR1B |= (1<<WGM12);   // CTC mode
   // Start Timer by setting the prescaler
   TCCR1B |= (1<<CS11); // 8 prescaler 
