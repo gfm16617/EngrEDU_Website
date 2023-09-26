@@ -1,0 +1,69 @@
+# header information:
+Hicon_tutorial|9.07
+
+# Views:
+Vicon|ic
+Vschematic|sch
+
+# Technologies:
+Tbicmos|ScaleFORbicmos()D300.0
+Tmocmos|ScaleFORmocmos()D300.0|mocmosAnalog()BT|mocmosNumberOfMetalLayers()I3
+
+# Cell r_divider;1{ic}
+Cr_divider;1{ic}||artwork|1695704643581|1695705335174|E
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOpened-Thicker-Polygon|art@2||3|-2|6|6|||trace()V[-3/-3,3/-1,-3/1,3/3]
+NTriangle|art@5||11|-3|2|2|RRR|
+NOpened-Thicker-Polygon|art@6||3|3|6|4|||trace()V[3/-2,-3/0,1/2,1/2]
+NOpened-Thicker-Polygon|art@8||3|-7|6|4|||trace()V[-3/2,3/0,-1/-2,-1/-2]
+Nschematic:Bus_Pin|pin@0||2|-11||||
+Nschematic:Wire_Pin|pin@1||2|-9||||
+Nschematic:Bus_Pin|pin@2||4|7|||RRR|
+Nschematic:Wire_Pin|pin@3||4|5|||RRR|
+Nschematic:Bus_Pin|pin@4||14|-3|||RR|
+Nschematic:Wire_Pin|pin@5||12|-3|||RR|
+Aschematic:wire|net@0|||900|pin@1||2|-9|pin@0||2|-11
+Aschematic:wire|net@1|||2700|pin@3||4|5|pin@2||4|7
+Aschematic:wire|net@2|||1800|pin@5||12|-3|pin@4||14|-3
+AThicker|net@5|||FS0|art@5||10|-3|art@2||6|-3
+Egnd||D5G2;Y-1;|pin@0||U
+Evin||D5G2;X-1;|pin@2||U
+Evout||D5G2;X-2;|pin@4||U
+X
+
+# Cell r_divider;1{sch}
+Cr_divider;1{sch}||schematic|1695703706100|1695704643589|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NOff-Page|conn@0||-7|5.5||||
+NOff-Page|conn@1||-11.5|-2.5|||R|
+NOff-Page|conn@2||-11.5|13.5|||RRR|
+NWire_Pin|pin@0||-11.5|5.5||||
+Ir_divider;1{ic}|r_divide@0||-0.5|22|||D5G4;
+NResistor|resnwell@0||-11.5|8.5|||RRR|3|ATTR_length(D5G0.25;X-1.5;)S2|ATTR_width(D5G0.5;X1.5;)S2|SCHEM_resistance(D5G1;)S100
+NResistor|resnwell@1||-11.5|2.5|||RRR|3|ATTR_length(D5G0.25;X-1.5;)S2|ATTR_width(D5G0.5;X1.5;)S2|SCHEM_resistance(D5G1;)S100
+Awire|net@1|||900|resnwell@0|b|-11.5|6.5|pin@0||-11.5|5.5
+Awire|net@2|||900|pin@0||-11.5|5.5|resnwell@1|a|-11.5|4.5
+Awire|net@3|||0|conn@0|a|-9|5.5|pin@0||-11.5|5.5
+Awire|net@4|||900|conn@2|y|-11.5|11.5|resnwell@0|a|-11.5|10.5
+Awire|net@5|||2700|conn@1|y|-11.5|-0.5|resnwell@1|b|-11.5|0.5
+Egnd||D5G2;RX1.5;|conn@1|a|U
+Evin||D5G2;RX1.5;|conn@2|a|U
+Evout||D5G2;X2;|conn@0|a|U
+X
+
+# Cell r_divider_sim;1{sch}
+Cr_divider_sim;1{sch}||schematic|1695705888239|1695706166375|
+Ngeneric:Facet-Center|art@0||0|0||||AV
+NWire_Pin|pin@0||-25|24||||
+NWire_Pin|pin@1||-29|-26||||
+NWire_Pin|pin@2||-10|11||||
+NWire_Pin|pin@3||-10|-13||||
+Ngeneric:Invisible-Pin|pin@4||6|24|||||SIM_spice_card(D5G4;)S[vdd vin 0 DC 1,.op]
+Ir_divider;1{ic}|r_divide@0||-29|14|||D5G4;
+Ir_divider;1{ic}|r_divide@1||-31|-10|||D5G4;
+Awire|gnd|D5G4;Y-5;||900|r_divide@1|gnd|-29|-21|pin@1||-29|-26
+Awire|net@0|||2700|r_divide@1|vin|-27|-3|r_divide@0|gnd|-27|3
+Awire|vin|D5G4;Y4;||2700|r_divide@0|vin|-25|21|pin@0||-25|24
+Awire|vout_1|D5G4;X10;||1800|r_divide@0|vout|-15|11|pin@2||-10|11
+Awire|vout_2|D5G4;X11;||1800|r_divide@1|vout|-17|-13|pin@3||-10|-13
+X
