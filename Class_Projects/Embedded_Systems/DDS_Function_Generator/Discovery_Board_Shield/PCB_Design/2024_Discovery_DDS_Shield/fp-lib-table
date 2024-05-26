@@ -1,0 +1,13 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "PTS636_SM25F_Button")(type "KiCad")(uri "${KIPRJMOD}/components/PTS636_SM25F_Button/PTS636_SM25F_Button.pretty")(options "")(descr ""))
+  (lib (name "JS202011SCQN_Button")(type "KiCad")(uri "${KIPRJMOD}/components/JS202011SCQN_Button/JS202011SCQN_Button.pretty")(options "")(descr ""))
+  (lib (name "ABLSG-8.000MHZ-D-2-Y-T")(type "KiCad")(uri "${KIPRJMOD}/components/ABLSG-8.000MHZ/ABLSG-8.000MHZ.pretty")(options "")(descr ""))
+  (lib (name "ABS25-32.768KHZ")(type "KiCad")(uri "${KIPRJMOD}/components/ABS25-32.768KHZ/ABS25-32.768KHZ.pretty")(options "")(descr ""))
+  (lib (name "USB_B_Micro_Amphenol")(type "KiCad")(uri "${KIPRJMOD}/components/USB_B_Micro_Amphenol/USB_B_Micro_Amphenol.pretty")(options "")(descr ""))
+  (lib (name "BNC_RightAngle_50ohm")(type "KiCad")(uri "${KIPRJMOD}/components/BNC_RightAngle_50ohm/BNC_RightAngle_50ohm.pretty")(options "")(descr ""))
+  (lib (name "744066681_680uH")(type "KiCad")(uri "${KIPRJMOD}/components/744066681_680uH/744066681_680uH.pretty")(options "")(descr ""))
+  (lib (name "Cap_Ele_220uF_16V_SMD")(type "KiCad")(uri "${KIPRJMOD}/components/Cap_Ele_220uF_16V_SMD/Cap_Ele_220uF_16V_SMD.pretty")(options "")(descr ""))
+  (lib (name "Cap_Ele_470uF_16V_SMD")(type "KiCad")(uri "${KIPRJMOD}/components/Cap_Ele_470uF_16V_SMD/Cap_Ele_470uF_16V_SMD.pretty")(options "")(descr ""))
+  (lib (name "Cap_Ele_100uF_16V_SMD")(type "KiCad")(uri "${KIPRJMOD}/components/Cap_Ele_100uF_16V_SMD/Cap_Ele_100uF_16V_SMD.pretty")(options "")(descr ""))
+)
