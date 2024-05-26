@@ -5,6 +5,7 @@
 - Riley
 - Emily
 - Duncan
+- Cole
 
 #### 5pm to 7pm (Tuesday and Thursday)
 - Carter
