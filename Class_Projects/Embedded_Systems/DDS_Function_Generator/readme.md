@@ -6,6 +6,7 @@
 - Emily
 - Duncan
 - Cole
+- Goran
 
 #### 5pm to 7pm (Tuesday and Thursday)
 - Carter
