@@ -2,7 +2,7 @@
 ## PCB Soldering Schedule
 
 #### Noon to 2pm (Tuesday and Thursday)
-
+Riley
 
 #### 5pm to 7pm (Tuesday and Thursday)
-
+Carter
