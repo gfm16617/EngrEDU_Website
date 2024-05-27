@@ -11,6 +11,7 @@
 - Angela
 - Emma
 - Addis
+- Amelia
 
 #### 5pm to 7pm (Tuesday and Thursday)
 - Carter
@@ -20,7 +21,6 @@
 - Ryan
 - Hayden
 - Cade
-- Amelia
 - Jiajun
 - Viktorija
 - Griff
