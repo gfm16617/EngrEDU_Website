@@ -8,6 +8,8 @@
 - Cole
 - Goran
 - Teddy
+- Angela
+- Emma
 
 #### 5pm to 7pm (Tuesday and Thursday)
 - Carter
