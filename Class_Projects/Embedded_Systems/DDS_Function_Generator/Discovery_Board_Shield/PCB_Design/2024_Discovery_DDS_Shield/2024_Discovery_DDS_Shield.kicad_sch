@@ -8374,7 +8374,7 @@
 		)
 		(uuid "1d8d2d54-7c49-43be-9893-75a33df23526")
 	)
-	(text "fc = 1/(2*pi*R37*R38*C33*C34)"
+	(text "fc = 1/(2*pi*sqrt(R53*R55*C2*C3))"
 		(exclude_from_sim no)
 		(at 154.432 25.908 0)
 		(effects
@@ -8397,7 +8397,7 @@
 		)
 		(uuid "358e2880-d11b-4518-aef0-1d5ba6ec5cd0")
 	)
-	(text "fc = 1/(2*pi*R27*C32)"
+	(text "fc = 1/(2*pi*R52*C1)"
 		(exclude_from_sim no)
 		(at 109.474 19.304 0)
 		(effects
