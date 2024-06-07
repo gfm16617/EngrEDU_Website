@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "USB_PCB_Connector")(type "KiCad")(uri "${KIPRJMOD}/components/USB_PCB_Connector/USB_PCB_Connector.kicad_sym")(options "")(descr ""))
+)
