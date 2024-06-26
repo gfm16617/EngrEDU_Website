@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "BNC_RightAngle_50ohm")(type "KiCad")(uri "${KIPRJMOD}/components/BNC_RightAngle_50ohm/BNC_RightAngle_50ohm.pretty")(options "")(descr ""))
+  (lib (name "AudioJack_CUI_3mm5")(type "KiCad")(uri "${KIPRJMOD}/components/AudioJack_CUI_3mm5/AudioJack_CUI_3mm5.pretty")(options "")(descr ""))
+)
