@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "MMBT2222")(type "KiCad")(uri "${KIPRJMOD}/components/MMBT2222/MMBT2222.kicad_sym")(options "")(descr ""))
+)
