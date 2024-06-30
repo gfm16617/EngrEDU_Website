@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "USB_B_Micro_Amphenol")(type "KiCad")(uri "${KIPRJMOD}/components/USB_B_Micro_Amphenol/USB_B_Micro_Amphenol.pretty")(options "")(descr ""))
+  (lib (name "Crytal_ABM8-272-T3")(type "KiCad")(uri "${KIPRJMOD}/components/Crytal_ABM8-272-T3/Crytal_ABM8-272-T3.pretty")(options "")(descr ""))
+)
