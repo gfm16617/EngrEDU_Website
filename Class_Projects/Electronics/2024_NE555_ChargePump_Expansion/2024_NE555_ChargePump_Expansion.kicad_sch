@@ -1939,7 +1939,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MELF"
+		(property "Footprint" "Diode_SMD:D_MicroMELF_Handsoldering"
 			(at 102.87 45.72 0)
 			(effects
 				(font
@@ -2093,7 +2093,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MELF"
+		(property "Footprint" "Diode_SMD:D_MicroMELF_Handsoldering"
 			(at 170.18 45.72 0)
 			(effects
 				(font
@@ -2390,7 +2390,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MELF"
+		(property "Footprint" "Diode_SMD:D_MicroMELF_Handsoldering"
 			(at 187.96 45.72 0)
 			(effects
 				(font
@@ -2550,7 +2550,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MELF"
+		(property "Footprint" "Diode_SMD:D_MicroMELF_Handsoldering"
 			(at 69.85 45.72 0)
 			(effects
 				(font
@@ -2702,7 +2702,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MELF"
+		(property "Footprint" "Diode_SMD:D_MicroMELF_Handsoldering"
 			(at 153.67 45.72 0)
 			(effects
 				(font
@@ -2787,7 +2787,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MELF"
+		(property "Footprint" "Diode_SMD:D_MicroMELF_Handsoldering"
 			(at 86.36 45.72 0)
 			(effects
 				(font
@@ -3630,7 +3630,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MELF"
+		(property "Footprint" "Diode_SMD:D_MicroMELF_Handsoldering"
 			(at 137.16 45.72 0)
 			(effects
 				(font
@@ -3715,7 +3715,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MELF"
+		(property "Footprint" "Diode_SMD:D_MicroMELF_Handsoldering"
 			(at 53.34 45.72 0)
 			(effects
 				(font
@@ -3873,7 +3873,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MELF"
+		(property "Footprint" "Diode_SMD:D_MicroMELF_Handsoldering"
 			(at 204.47 45.72 0)
 			(effects
 				(font
@@ -4024,7 +4024,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_MELF"
+		(property "Footprint" "Diode_SMD:D_MicroMELF_Handsoldering"
 			(at 120.65 45.72 0)
 			(effects
 				(font
