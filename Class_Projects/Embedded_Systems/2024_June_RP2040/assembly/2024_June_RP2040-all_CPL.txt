@@ -1,0 +1,38 @@
+### Footprint positions - created on 2024-08-05T17:12:57-0600 ###
+### Printed by KiCad version 8.0.2
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val                 Package                                             PosX       PosY       Rot  Side
+C1        10uF                C_0805_2012Metric_Pad1.18x1.45mm_HandSolder       5.2070    23.1394   90.0000  top
+C2        10uF                C_0805_2012Metric_Pad1.18x1.45mm_HandSolder      17.2720    22.1742   90.0000  top
+C3        100nF               C_0402_1005Metric_Pad0.74x0.62mm_HandSolder      27.5844    21.0566   90.0000  top
+C4        100nF               C_0402_1005Metric_Pad0.74x0.62mm_HandSolder      28.7528    21.0566   90.0000  top
+C5        100nF               C_0402_1005Metric_Pad0.74x0.62mm_HandSolder      33.2486    21.5225   90.0000  top
+C6        100nF               C_0402_1005Metric_Pad0.74x0.62mm_HandSolder      33.2486     9.6266  -90.0000  top
+C7        100nF               C_0402_1005Metric_Pad0.74x0.62mm_HandSolder      28.3718    10.6172  180.0000  top
+C8        100nF               C_0402_1005Metric_Pad0.74x0.62mm_HandSolder      25.3659    15.6464  180.0000  top
+C9        100nF               C_0402_1005Metric_Pad0.74x0.62mm_HandSolder      38.9215    15.6718    0.0000  top
+C11       100nF               C_0402_1005Metric_Pad0.74x0.62mm_HandSolder      14.9352     7.6454  180.0000  top
+C12       1uF                 C_0402_1005Metric_Pad0.74x0.62mm_HandSolder      25.6540    18.4912    0.0000  top
+C13       1uF                 C_0402_1005Metric_Pad0.74x0.62mm_HandSolder      25.6540    19.6596  180.0000  top
+C14       100nF               C_0402_1005Metric_Pad0.74x0.62mm_HandSolder      38.9215    16.7894    0.0000  top
+C15       100nF               C_0402_1005Metric_Pad0.74x0.62mm_HandSolder      25.3659    14.5288  180.0000  top
+C16       10pF                C_0402_1005Metric_Pad0.74x0.62mm_HandSolder      42.1868    14.0041  -90.0000  top
+C17       10pF                C_0402_1005Metric_Pad0.74x0.62mm_HandSolder      42.2148    11.6078   90.0000  top
+D1        LED                 LED_0402_1005Metric_Pad0.77x0.64mm_HandSolder    37.3767    10.1346  180.0000  top
+J1        Conn_01x02          PinHeader_1x02_P2.54mm_Vertical                  11.5824     9.4234    0.0000  top
+J2        USB_Micro           USB_B_Micro_Amphenol                              1.7958    16.4230  -90.0000  top
+J3        Conn_01x15          PinHeader_1x15_P2.54mm_Vertical                  16.2560     2.5082   90.0000  top
+J4        Conn_01x15          PinHeader_1x15_P2.54mm_Vertical                  16.2560    27.5082   90.0000  top
+J5        SLink_Conn          PinHeader_1x03_P2.54mm_Vertical                  44.7802    21.5900   90.0000  top
+R1        1k                  R_0402_1005Metric_Pad0.72x0.64mm_HandSolder      23.9776     5.9944  180.0000  top
+R2        DNP                 R_0402_1005Metric_Pad0.72x0.64mm_HandSolder      18.7706     6.0198    0.0000  top
+R3        27R                 R_0402_1005Metric_Pad0.72x0.64mm_HandSolder      22.5552    16.1036  180.0000  top
+R4        27R                 R_0402_1005Metric_Pad0.72x0.64mm_HandSolder      22.5426    17.2212  180.0000  top
+R5        1k                  R_0402_1005Metric_Pad0.72x0.64mm_HandSolder      40.9676    13.9954  -90.0000  top
+R6        1k                  R_0402_1005Metric_Pad0.72x0.64mm_HandSolder      37.3888     8.9662    0.0000  top
+U1        NCP1117-3.3_SOT223  SOT-223-3_TabPin2                                11.3284    21.6541    0.0000  top
+U2        RP2040              QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm              31.9786    15.4686   90.0000  top
+U3        W25Q128JVS          SOIC-8_5.23x5.23mm_P1.27mm                       20.8788     9.5758  180.0000  top
+Y2        ABM8-272-T3         Crytal_ABM8-272-T3                               45.4520    12.2752   90.0000  top
+## End
