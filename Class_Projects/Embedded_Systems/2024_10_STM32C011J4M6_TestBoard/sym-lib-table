@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ICM_42605")(type "KiCad")(uri "${KIPRJMOD}/components/ICM_42605/ICM_42605.kicad_sym")(options "")(descr ""))
+)

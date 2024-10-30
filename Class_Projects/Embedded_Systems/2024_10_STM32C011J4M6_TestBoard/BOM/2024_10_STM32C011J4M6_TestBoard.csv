@@ -1,0 +1,15 @@
+#,Reference,Qty,Manufacturer,Mfg Part#,Value,Footprint,DNP,Mouser
+1,"C1,C3,C5,C7,C8",5,YAGEO,CC0603JRX7R9BB104 ,0.1uF,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,https://www.mouser.com/ProductDetail/YAGEO/CC0603JRX7R9BB104?qs=57cj7OiSijmjSM%252BQadQODQ%3D%3D
+2,"C4,C6",2,TAIYO YUDEN,MSASL168BB5106KTNB33,10uF,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,https://www.mouser.com/ProductDetail/TAIYO-YUDEN/MSASL168BB5106KTNB33?qs=tlsG%2FOw5FFgv8vGbRXU%2FLg%3D%3D
+3,C9,1,TAIYO YUDEN,MBASL168SB5225KTNA01 ,2.2uF,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,https://www.mouser.com/ProductDetail/TAIYO-YUDEN/MBASL168SB5225KTNA01?qs=tlsG%2FOw5FFgc%2Fwl4aSK9Gw%3D%3D
+4,C10,1,YAGEO,AS0603KRX7R0BB103,10nF,Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder,,https://www.mouser.com/ProductDetail/YAGEO/AS0603KRX7R0BB103?qs=Znm5pLBrcAI6Ioz%2Fh4o3yw%3D%3D
+5,D1,1,Wurth Elektronik,150060YS75000,TXLED,LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,https://www.mouser.com/ProductDetail/Wurth-Elektronik/150060YS75000?qs=LlUlMxKIyB0nKmwefHgtZw%3D%3D
+6,D2,1,Wurth Elektronik,150060VS75000,RXLED,LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder,,https://www.mouser.com/ProductDetail/Wurth-Elektronik/150060VS75000?qs=LlUlMxKIyB1Q1Bi5mQ%2FKLw%3D%3D
+7,J2,1,,,SWD_Conn,Connector_JST:JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical,DNP,
+8,J3,1,Same Sky,UJ20-C-H-C-4-SMT-TR ,USB_C_Receptacle_USB2.0_14P,Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A,,https://www.mouser.com/ProductDetail/Same-Sky/UJ20-C-H-C-4-SMT-TR?qs=i8QVZAFTkqTaeFkL507bBA%3D%3D
+9,MT1,1,TDK InvenSense,ICM-42605 ,ICM-42605,ICM_42605:ICM_42605,,https://www.mouser.com/ProductDetail/TDK-InvenSense/ICM-42605?qs=gZXFycFWdAO0MPgeewGYjQ%3D%3D
+10,"R1,R2",2,Vishay / Dale,CRCW0603270RFKTA ,270,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,https://www.mouser.com/ProductDetail/Vishay-Dale/CRCW0603270RFKTA?qs=m78yHlr47QAPkYcHuE9Niw%3D%3D
+11,"R3,R4",2,Vishay / Dale,CRCW06035K10FKEC ,5.1k,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,,https://www.mouser.com/ProductDetail/Vishay-Dale/CRCW06035K10FKEC?qs=sGAEpiMZZMtlubZbdhIBIKbhzOdzan%2FGt7ImYW9MzNM%3D
+12,U1,1,STMicroelectronics,STM32C011J4M6 ,STM32C011J4Mx,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,,https://www.mouser.com/ProductDetail/511-STM32C011J4M6
+13,U2,1,FTDI,FT230XS-U ,FT230XS,Package_SO:SSOP-16_3.9x4.9mm_P0.635mm,,https://www.mouser.com/ProductDetail/895-FT230XS-U
+14,U3,1,STMicroelectronics,LD1117S33TR,LD1117S33TR_SOT223,Package_TO_SOT_SMD:SOT-223-3_TabPin2,,https://www.mouser.com/ProductDetail/STMicroelectronics/LD1117S33TR?qs=edoyzKMbmhntQZx4BFmoqw%3D%3D
