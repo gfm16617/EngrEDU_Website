@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ADS8689")(type "KiCad")(uri "${KIPRJMOD}/components/ADS8689/ADS8689.pretty")(options "")(descr ""))
+)
