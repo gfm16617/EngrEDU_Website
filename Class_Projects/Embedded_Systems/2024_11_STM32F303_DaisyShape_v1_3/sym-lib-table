@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ABLSG-8.000MHZ-D-2-Y-T")(type "KiCad")(uri "${KIPRJMOD}/components/ABLSG-8.000MHZ/ABLSG-8.000MHZ-D-2-Y-T.kicad_sym")(options "")(descr ""))
+  (lib (name "ABS25-32.768KHZ-1-T")(type "KiCad")(uri "${KIPRJMOD}/components/ABS25-32.768KHZ/ABS25-32.768KHZ-1-T.kicad_sym")(options "")(descr ""))
+  (lib (name "10118194-0001LF")(type "KiCad")(uri "${KIPRJMOD}/components/USB_B_Micro_Amphenol/10118194-0001LF.kicad_sym")(options "")(descr ""))
+  (lib (name "SW_RaisedSlide")(type "KiCad")(uri "${KIPRJMOD}/components/SW_RaisedSlide/SW_RaisedSlide.kicad_sym")(options "")(descr ""))
+)

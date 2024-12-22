@@ -1,0 +1,22 @@
+#,Qty,Reference,Value,Footprint,DNP,Manufacturer,Mfg Part#,Mouser
+1,6,"C2,C4,C5,C6,C15,C17",0.1uF,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,,KEMET,C0805C104K4JACAUTO,https://www.mouser.com/ProductDetail/KEMET/C0805C104K4JACAUTO?qs=sGAEpiMZZMukHu%252BjC5l7YcDEhfSOZOpN7J4S%2FUXKmJA%3D
+2,2,"C16,C18",10uF,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,,KEMET,C0805C106K4PACTU,https://www.mouser.com/ProductDetail/KEMET/C0805C106K4PACTU?qs=sGAEpiMZZMukHu%252BjC5l7YSC4XbKrDVLQg534tyUdiI4%3D
+3,2,"C19,C20",22p,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,,KYOCERA AVX,08055C220KAT2A ,https://www.mouser.com/ProductDetail/KYOCERA-AVX/08055C220KAT2A?qs=%252BdQmOuGyFcHsL9WawpqPNw%3D%3D
+4,1,C21,0.01uF,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,,KYOCERA AVX,KAF21BR72A103JT ,https://www.mouser.com/ProductDetail/KYOCERA-AVX/KAF21BR72A103JT?qs=Jm2GQyTW%2Fbiu9dbnlAVfgQ%3D%3D
+5,1,D2,TXLED,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,Wurth Elektronik,150080VS75000,https://www.mouser.com/ProductDetail/Wurth-Elektronik/150080VS75000?qs=LlUlMxKIyB0tGHJmO6%252B0ug%3D%3D&srsltid=AfmBOoqy2PqoAxFSQ_LHqMH5148teGc69TWmeHaaNxuhLOq6iOyc5vrq
+6,1,D3,PWR_LED,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,Wurth Elektronik,150080RS75000,https://www.mouser.com/ProductDetail/Wurth-Elektronik/150080RS75000?qs=LlUlMxKIyB2jdCo7bnfgew%3D%3D
+7,1,D4,USER_LED,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,Wurth Elektronik,150080BS75000,https://www.mouser.com/ProductDetail/710-150080BS75000
+8,1,D5,RXLED,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,Wurth Elektronik,150080BS75000 ,https://www.mouser.com/ProductDetail/Wurth-Elektronik/150080BS75000?qs=2kOmHSv6VfT2tBo3UPVqAQ%3D%3D&srsltid=AfmBOooaGD7tJZSPZxR9UGEUzdTEE7qO3eW6cPJqpd1-LquZDJyt7WN2
+9,1,J1,USB_Micro,USB_B_Micro_Amphenol:AMPHENOL_10118194-0001LF,,Amphenol ICC,10118194-0001LF ,https://www.mouser.com/ProductDetail/Amphenol-FCI/10118194-0001LF?qs=Ywefl8B65e4FIdY8OWfRQA%3D%3D
+10,1,J3,SWD_CONN,Connector_JST:JST_SH_BM05B-SRSS-TB_1x05-1MP_P1.00mm_Vertical,DNP,,,
+11,1,J4,uP_LEFT_CONN,Connector_PinHeader_2.54mm:PinHeader_1x24_P2.54mm_Vertical,DNP,,,
+12,1,J5,uP_RIGHT_CONN,Connector_PinHeader_2.54mm:PinHeader_1x24_P2.54mm_Vertical,DNP,,,
+13,2,"R4,R9",270,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,TE Connectivity / Holsworthy,CRGCQ0805F270R,https://www.mouser.com/ProductDetail/TE-Connectivity-Holsworthy/CRGCQ0805F270R?qs=sGAEpiMZZMtlubZbdhIBIOInyB5Ysv8sRCPd6CNB8Gs%3D
+14,2,"R5,R10",1k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,Vishay / Dale,TNPW08051K00FEEA,https://www.mouser.com/ProductDetail/Vishay-Dale/TNPW08051K00FEEA?qs=4CveT0Ftx0oXPRWW%252BDtRJw%3D%3D
+15,1,R6,10k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,TE Connectivity / Holsworthy,CPF0805B10KE1,https://www.mouser.com/ProductDetail/279-CPF0805B10KE1
+16,2,"R7,R8",22R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,Vishay / Draloric,RCA080522R0FKEA,https://www.mouser.com/ProductDetail/71-RCA080522R0FKEA
+17,1,SW2,SW_uP_Reset,SW_uP_Reset:SW_uP_Reset,,Wurth Elektronik,434121025816,https://www.mouser.com/ProductDetail/Wurth-Elektronik/434121025816?qs=wr8lucFkNMWyfcUAFbmtRw%3D%3D&srsltid=AfmBOoqmUzwVR0rhJCccY2qUadJOE4Zbjl9C5AaSfC2M-qOmMq9QkSd8
+18,1,U1,STM32F303K6Tx,Package_QFP:LQFP-32_7x7mm_P0.8mm,,STMicroelectronics,STM32F303K6T6 ,https://www.mouser.com/ProductDetail/STMicroelectronics/STM32F303K6T6?qs=9MuLHSklicrLjPGiDun5lQ%3D%3D&srsltid=AfmBOorwn3T8DSMWid9ZNSEv_7rDrwDmwPnzCnjlCBYILbf-b427R3Nt
+19,1,U2,FT230XS,Package_SO:SSOP-16_3.9x4.9mm_P0.635mm,,FTDI,FT230XS-U ,https://www.mouser.com/ProductDetail/895-FT230XS-U
+20,1,U4,LD1117S33TR_SOT223,Package_TO_SOT_SMD:SOT-223-3_TabPin2,,STMicroelectronics,LD1117S33TR,https://www.mouser.com/ProductDetail/STMicroelectronics/LD1117S33TR?qs=edoyzKMbmhntQZx4BFmoqw%3D%3D
+21,1,Y3,16MHz,Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm,,ABRACON,ABM8-16.000MHZ-D1X-T ,https://www.mouser.com/ProductDetail/ABRACON/ABM8-16.000MHZ-D1X-T?qs=vLWxofP3U2w30ayrUAlCvg%3D%3D&srsltid=AfmBOooiNWtWT-IA7ZdvVyV7-fIjOSW66zYC3zO0IDFU50s-rFdXbPsT
