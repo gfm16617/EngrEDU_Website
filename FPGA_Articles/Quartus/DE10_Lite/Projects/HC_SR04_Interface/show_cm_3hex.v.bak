@@ -1,0 +1,7 @@
+module show_cm_3hex(
+	input Clock,
+	intput Resetn,
+	input [20:0] dist_cm_int,  // distance in centimeters (integer)
+);
+
+endmodule

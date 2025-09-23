@@ -1,0 +1,5 @@
+module trigger_generator(
+	//
+);
+
+endmodule
