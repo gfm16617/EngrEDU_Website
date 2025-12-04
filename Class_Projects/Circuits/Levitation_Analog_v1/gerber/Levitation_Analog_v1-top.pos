@@ -1,0 +1,50 @@
+### Footprint positions - created on 2025-10-06T02:07:55-0600 ###
+### Printed by KiCad version 9.0.4
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val               Package                                           PosX       PosY       Rot  Side
+C1        200nF             C_1206_3216Metric_Pad1.33x1.80mm_HandSolder    36.4400    34.0600    0.0000  top
+C2        0.1uF             C_1206_3216Metric_Pad1.33x1.80mm_HandSolder    24.1800    33.9400  -90.0000  top
+C3        10uF              C_1206_3216Metric_Pad1.33x1.80mm_HandSolder    16.9200    17.5000   90.0000  top
+C4        10uF              C_1206_3216Metric_Pad1.33x1.80mm_HandSolder    30.6700    16.8725  -90.0000  top
+C5        0.1uF             C_1206_3216Metric_Pad1.33x1.80mm_HandSolder    78.5300    42.3100    0.0000  top
+C6        0.1uF             C_1206_3216Metric_Pad1.33x1.80mm_HandSolder    58.8525    36.0450  -90.0000  top
+C7        0.1uF             C_1206_3216Metric_Pad1.33x1.80mm_HandSolder    83.1100    15.2200    0.0000  top
+D1        SM516             D_MELF                                         49.5800    42.8100    0.0000  top
+D2        LED               LED_1206_3216Metric                            72.6100    45.5100  180.0000  top
+D3        LED               LED_1206_3216Metric                            32.4600    12.5800    0.0000  top
+D4        LED               LED_1206_3216Metric                            15.9600     3.3900  180.0000  top
+J1        HALL_SENSOR_CONN  JST_XA_B03B-XASK-1_1x03_P2.50mm_Vertical       21.7700    47.2100  180.0000  top
+J2        HE_FILTER_CONN    PinHeader_1x03_P2.54mm_Vertical                37.2700    29.6900  -90.0000  top
+J3        CS_FILTER_CONN    PinHeader_1x03_P2.54mm_Vertical                83.5800     8.4500  -90.0000  top
+J4        PWR_CONN          JST_XA_B03B-XASK-1_1x03_P2.50mm_Vertical       26.0000     9.0300  180.0000  top
+J5        COIL_CONN         JST_XA_B03B-XASK-1_1x03_P2.50mm_Vertical       51.8400    48.9900  180.0000  top
+J6        CS_SW_CONN        PinHeader_1x03_P2.54mm_Vertical                58.2700    27.0700    0.0000  top
+J7        PWR_CONN          BarrelJack_Horizontal                           7.9225    15.7300   90.0000  top
+MOSFET1   IRF630SPBF        TO-263AB_HIGHVOLTAGE-M                         49.2900    32.5759    0.0000  top
+MOSFET2   IRF630SPBF        TO-263AB_HIGHVOLTAGE-M                         49.0200    13.1759    0.0000  top
+R1        100k              R_1206_3216Metric_Pad1.30x1.75mm_HandSolder    40.8900    22.9300  -90.0000  top
+R2        100k              R_1206_3216Metric_Pad1.30x1.75mm_HandSolder    41.7900     5.0500  180.0000  top
+R3        10k               R_1206_3216Metric_Pad1.30x1.75mm_HandSolder    65.4925    35.2350    0.0000  top
+R4        0.1               R_1206_3216Metric_Pad1.30x1.75mm_HandSolder    62.6025    41.9950    0.0000  top
+R5        1k                R_1206_3216Metric_Pad1.30x1.75mm_HandSolder    72.6700    42.7900  180.0000  top
+R6        1k                R_1206_3216Metric_Pad1.30x1.75mm_HandSolder    33.8500    16.8600  -90.0000  top
+R7        1k                R_1206_3216Metric_Pad1.30x1.75mm_HandSolder    16.1400     7.4800  -90.0000  top
+RV1       10k               Potentiometer_Alps_RK09K_Single_Vertical       32.4000    37.0500   90.0000  top
+RV2       10k               Potentiometer_Alps_RK09K_Single_Vertical        5.8600    24.7000   90.0000  top
+RV3       10k               Potentiometer_Alps_RK09K_Single_Vertical       63.1400     5.5700   90.0000  top
+RV4       1k                Potentiometer_Alps_RK09K_Single_Vertical       79.0200    18.5400   90.0000  top
+S1        JS202011SCQN      SW_JS202011SCQN                                62.3025    48.8050  -90.0000  top
+TP1       Sig1              TestPoint_Loop_D2.50mm_Drill1.0mm              23.7300    26.2500   90.0000  top
+TP2       Sig2              TestPoint_Loop_D2.50mm_Drill1.0mm              80.8300    37.1600   90.0000  top
+TP3       Sig_GND           TestPoint_Loop_D2.50mm_Drill1.0mm              37.2300    21.4500   90.0000  top
+TP4       Sig4              TestPoint_Loop_D2.50mm_Drill1.0mm              64.0100    31.1100   90.0000  top
+TP5       Sig5              TestPoint_Loop_D2.50mm_Drill1.0mm              37.9900    11.4500   90.0000  top
+TP6       Sig6              TestPoint_Loop_D2.50mm_Drill1.0mm              25.7000    41.4100   90.0000  top
+TP7       Sig7              TestPoint_Loop_D2.50mm_Drill1.0mm              13.0200    40.7700   90.0000  top
+TP8       Sig8              TestPoint_Loop_D2.50mm_Drill1.0mm              72.2300    52.6100   90.0000  top
+U1        LM358             SOP-8_3.76x4.96mm_P1.27mm                      19.5500    38.0600  -90.0000  top
+U2        LM1117MP-5.0      SOT-223-3_TabPin2                              23.8600    18.2800    0.0000  top
+U3        LM358             SOP-8_3.76x4.96mm_P1.27mm                      73.6300    38.1500    0.0000  top
+U4        INA169NA_250      SOT95P280X145-5N                               62.6050    38.5450  180.0000  top
+## End

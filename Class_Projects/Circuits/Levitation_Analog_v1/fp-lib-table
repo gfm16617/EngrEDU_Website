@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "IRF630")(type "KiCad")(uri "${KIPRJMOD}/components/IRF630/IRF630.pretty")(options "")(descr ""))
+  (lib (name "INA169NA_250")(type "KiCad")(uri "${KIPRJMOD}/components/INA169NA_250/INA169NA_250.pretty")(options "")(descr ""))
+  (lib (name "JS202011SCQN_Button")(type "KiCad")(uri "${KIPRJMOD}/components/JS202011SCQN_Button/JS202011SCQN_Button.pretty")(options "")(descr ""))
+)
