@@ -1,0 +1,50 @@
+### Footprint positions - created on 2026-02-02T00:24:40-0700 ###
+### Printed by KiCad version 9.0.4
+## Unit = mm, Angle = deg.
+## Side : top
+# Ref     Val          Package                                              PosX       PosY       Rot  Side
+C1        47uF         CP_Radial_D6.3mm_P2.50mm                          61.4480    25.8924  -90.0000  top
+C2        100pF        C_Disc_D5.0mm_W2.5mm_P2.50mm                      45.1280    23.4000   90.0000  top
+J1        Power        PinSocket_1x08_P2.54mm_Vertical                   43.1780     2.5400   90.0000  top
+J2        Digital/PWM  PinSocket_1x10_P2.54mm_Vertical                   34.0340    50.8000   90.0000  top
+J3        Analog       PinSocket_1x06_P2.54mm_Vertical                   66.0380     2.5400   90.0000  top
+J4        Digital/PWM  PinSocket_1x08_P2.54mm_Vertical                   60.9580    50.8000   90.0000  top
+J5        IMU_CONN     PinSocket_1x08_P2.54mm_Vertical                   22.6980    32.2700  -90.0000  top
+J6        SCREEN_CONN  PinHeader_1x04_P2.54mm_Vertical                   11.1380    27.7600   90.0000  top
+J7        AUDIO_OUT    PinHeader_1x03_P2.54mm_Vertical                   68.5480    28.0800    0.0000  top
+J9        JUMPER       PinHeader_1x03_P2.54mm_Vertical                   42.2780    13.8300  180.0000  top
+J12       AUDIO_IN     PinHeader_1x03_P2.54mm_Vertical                   68.8580    10.2200  180.0000  top
+R1        100k         R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    68.4580    45.3300  -90.0000  top
+R2        100k         R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    68.4980    37.1900  -90.0000  top
+R3        20k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    63.5780    35.3900   90.0000  top
+R4        20k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    63.5580    41.3100   90.0000  top
+R5        10k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    59.6080    37.1500  -90.0000  top
+R6        20k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    59.5480    41.3200   90.0000  top
+R7        10k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    55.5880    37.1800  -90.0000  top
+R8        20k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    55.6080    41.3100   90.0000  top
+R9        10k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    51.5880    37.1900  -90.0000  top
+R10       20k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    51.5080    41.3500   90.0000  top
+R11       10k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    47.4180    37.2300  -90.0000  top
+R12       20k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    47.4180    41.3800   90.0000  top
+R13       10k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    43.3880    37.1800  -90.0000  top
+R14       20k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    43.3680    41.3800   90.0000  top
+R15       10k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    39.3080    37.1900  -90.0000  top
+R16       20k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    39.3080    41.3500   90.0000  top
+R17       10k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    35.2680    37.2000  -90.0000  top
+R18       20k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    35.2880    41.3300   90.0000  top
+R19       10k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    31.3180    37.1600  -90.0000  top
+R20       20k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    31.3280    41.3300   90.0000  top
+R21       10k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    27.3280    37.1600  -90.0000  top
+R22       20k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    27.3680    41.3500   90.0000  top
+R23       20k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    37.4580    25.7200   90.0000  top
+R24       20k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    41.5980    25.7600  -90.0000  top
+R25       20k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    31.1580     8.5800    0.0000  top
+R26       20k          R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    36.8580     8.6300    0.0000  top
+R27       1k           R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical    53.4180    29.8200  180.0000  top
+RV1       100k         Potentiometer_Bourns_3386P_Vertical               49.5430     7.5100    0.0000  top
+RV2       100k         Potentiometer_Bourns_3386P_Vertical               60.7430     7.5100    0.0000  top
+RV3       100k         Potentiometer_Bourns_3386P_Vertical               34.9430    19.0000  180.0000  top
+SW1       BT_1         SW_PUSH_6mm                                       78.9480    42.1300  180.0000  top
+SW2       BT_2         SW_PUSH_6mm                                       78.9480    33.9500  180.0000  top
+U1        MCP6002-xP   DIP-8_W7.62mm_Socket_LongPads                     48.5380    25.8300    0.0000  top
+## End
