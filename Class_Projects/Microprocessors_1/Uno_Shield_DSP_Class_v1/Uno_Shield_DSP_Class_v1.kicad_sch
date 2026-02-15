@@ -3641,16 +3641,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 149.86) (xy 137.16 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "09f17973-a2cd-475b-ad44-d699eeb534bd")
-	)
-	(wire
-		(pts
 			(xy 77.47 111.76) (xy 77.47 113.03)
 		)
 		(stroke
@@ -3938,16 +3928,6 @@
 			(type default)
 		)
 		(uuid "35888256-e890-424a-b862-7dc2eb274830")
-	)
-	(wire
-		(pts
-			(xy 137.16 128.27) (xy 137.16 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "358ad45b-1210-41f6-bdc4-2b7eab01fdb8")
 	)
 	(wire
 		(pts
@@ -4251,7 +4231,7 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 134.62) (xy 137.16 135.89)
+			(xy 137.16 133.35) (xy 137.16 135.89)
 		)
 		(stroke
 			(width 0)
@@ -6896,7 +6876,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "100"
 			(at 178.054 119.634 90)
 			(effects
 				(font
@@ -8321,7 +8301,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 137.16 128.27 0)
+		(at 137.16 133.35 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8329,7 +8309,7 @@
 		(dnp no)
 		(uuid "4931cbe6-b0de-4f56-ae18-adce17a73cbd")
 		(property "Reference" "#PWR026"
-			(at 137.16 132.08 0)
+			(at 137.16 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8338,7 +8318,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 137.5156 125.222 90)
+			(at 137.5156 130.302 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8347,7 +8327,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 128.27 0)
+			(at 137.16 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8355,7 +8335,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 128.27 0)
+			(at 137.16 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8363,7 +8343,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 137.16 128.27 0)
+			(at 137.16 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8378,73 +8358,6 @@
 			(project "Uno_Shield_DSP_Class_v1"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 137.16 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "49374b05-0e8c-4536-8260-b0cb66500083")
-		(property "Reference" "R25"
-			(at 134.112 130.81 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "20k"
-			(at 133.858 132.842 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical"
-			(at 137.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 137.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 137.16 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ea71fc45-a431-40fa-9c85-2049aabb6edf")
-		)
-		(pin "1"
-			(uuid "c82b9071-3d43-4baa-a3ec-ee4171ee45b7")
-		)
-		(instances
-			(project "Uno_Shield_DSP_Class_v1"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -9234,7 +9147,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 137.16 151.13 0)
+		(at 137.16 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9242,7 +9155,7 @@
 		(dnp no)
 		(uuid "6e091fb8-0c77-4694-88b7-8d2b0417a283")
 		(property "Reference" "#PWR025"
-			(at 137.16 157.48 0)
+			(at 137.16 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9251,7 +9164,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 137.16 155.194 0)
+			(at 137.16 148.844 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9259,7 +9172,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 137.16 151.13 0)
+			(at 137.16 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9267,7 +9180,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 137.16 151.13 0)
+			(at 137.16 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9275,7 +9188,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 137.16 151.13 0)
+			(at 137.16 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9422,73 +9335,6 @@
 			(project "Uno_Shield_DSP_Class_v1"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 137.16 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7568e4db-3700-4cbb-8581-c8a3a108d6c3")
-		(property "Reference" "R26"
-			(at 134.112 146.05 0)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "20k"
-			(at 133.858 148.082 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P2.54mm_Vertical"
-			(at 137.16 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 137.16 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 137.16 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f2c70a01-df82-47b0-a69b-d0e7d7a44b6d")
-		)
-		(pin "1"
-			(uuid "dce5cf78-c7c7-4852-8d21-11f9be3c58fa")
-		)
-		(instances
-			(project "Uno_Shield_DSP_Class_v1"
-				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-					(reference "R26")
 					(unit 1)
 				)
 			)
