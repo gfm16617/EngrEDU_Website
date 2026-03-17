@@ -1,0 +1,37 @@
+---
+title: FPAA RF A
+---
+## Filters, Mixers, Modulators
+
+<iframe width="640" height="480" style="border:1px solid #eeeeee;" src="https://3dviewer.net/embed.html#model=https://raw.githubusercontent.com/gfm16617/EngrEDU_Website/main/Okika/Shields/UNO_FPAA_RF_A_v1/2025_UNO_FPAA_RF_A_v1.wrl$camera=0.13390,-0.18403,0.08776,0.13435,-0.07333,0.00005,0.04598,0.62024,0.78306,45.00000$projectionmode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$defaultlinecolor=100,100,100$edgesettings=off,0,0,0,1"></iframe>
+
+## **PCB Design**
+
+### Schematics [(Zoom)]()
+
+
+### Layout [(Zoom)]()
+
+
+### [Interactive BOM]()
+
+
+## **Assemble Stage**
+
+The boards were manufactured by [PCBWay](https://www.pcbway.com/)
+
+
+## **Testing Stage**
+
+TODO
+
+## **GitHub Repository**
+
+TODO
+
+## **References**
+
+None
+## **Sponsor**
+
+

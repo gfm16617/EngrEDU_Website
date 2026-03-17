@@ -1,0 +1,37 @@
+---
+title: FPAA BIO A
+---
+## Bio Filters, Amplifiers, Envelope Extraction
+
+<iframe width="640" height="480" style="border:1px solid #eeeeee;" src="https://3dviewer.net/embed.html#model=https://raw.githubusercontent.com/gfm16617/EngrEDU_Website/main/Okika/Shields/UNO_FPAA_BIO_A_v1/2025_UNO_FPAA_BIO_A_v1.wrl$camera=0.08386,-0.00654,0.11099,0.13395,-0.07333,0.01080,0.00000,1.00000,0.00000,45.00000$projectionmode=perspective$envsettings=fishermans_bastion,off$backgroundcolor=255,255,255,255$defaultcolor=200,200,200$defaultlinecolor=100,100,100$edgesettings=off,0,0,0,1"></iframe>
+
+## **PCB Design**
+
+### Schematics [(Zoom)]()
+
+
+### Layout [(Zoom)]()
+
+
+### [Interactive BOM]()
+
+
+## **Assemble Stage**
+
+The boards were manufactured by [PCBWay](https://www.pcbway.com/)
+
+
+## **Testing Stage**
+
+TODO
+
+## **GitHub Repository**
+
+TODO
+
+## **References**
+
+None
+## **Sponsor**
+
+
