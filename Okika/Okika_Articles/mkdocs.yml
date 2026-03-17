@@ -2,6 +2,9 @@ site_name: Okika Articles
 
 use_directory_urls: false
 
+site_url: http://engredu.com/Repository/docs
+site_dir: site
+
 theme:
     name: material
     language: en
