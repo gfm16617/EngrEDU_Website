@@ -1,0 +1,982 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="0_AD2_Serial_Interface.html">
+      
+      
+        <link rel="next" href="2_AD2_Algorithm.html">
+      
+      
+      <link rel="icon" href="../../img/okika_icon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>AD2 State Driven Method - Okika Articles</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="Okika Articles" class="md-header__button md-logo" aria-label="Okika Articles" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Okika Articles
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              AD2 State Driven Method
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="Okika Articles" class="md-nav__button md-logo" aria-label="Okika Articles" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Okika Articles
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    FlexAnalog
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            FlexAnalog
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Program FPAA
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Program FPAA
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="0_AD2_Serial_Interface.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AD2 Serial Interface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    AD2 State Driven Method
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="1_AD2_State_Driven.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    AD2 State Driven Method
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#state-driven-configuration-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      State-Driven Configuration Flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="State-Driven Configuration Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primary-configuration-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary Configuration Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esp32-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESP32 Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reconfiguration-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reconfiguration Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#otc231-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      OTC231 Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="2_AD2_Algorithm.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    AD2 Algorithm Method
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    PCBs
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            PCBs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Arduino UNO
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Arduino UNO
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PCBs/Arduino%20UNO/0_FPAA_OTC231_2v1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FPAA OTC231 2v1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#state-driven-configuration-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      State-Driven Configuration Flow
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="State-Driven Configuration Flow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#primary-configuration-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primary Configuration Code
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esp32-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      ESP32 Example
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reconfiguration-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reconfiguration Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#otc231-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      OTC231 Example
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#github-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Repository
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    <span class="md-ellipsis">
+      References
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+  <h1>AD2 State Driven Method</h1>
+
+<p><img src="img/1_intro.png" width="100%"></p>
+<h2 id="introduction"><strong>Introduction</strong></h2>
+<p>There are 3 different ways to configure and interact with a FlexAnalog FPAA:</p>
+<ul>
+<li>Using the serial port under the AD2 software</li>
+<li><strong>Using state-driven method (dynamic configuration)</strong></li>
+<li>Using algorithmic method (dynamic configuration)</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This application note shows how to use the <strong>state-driven method</strong> using the AD2 software and your own microcontroller.</p>
+</div>
+<h2 id="state-driven-configuration-flow"><strong>State-Driven Configuration Flow</strong></h2>
+<p>State-driven dynamic configuration goes beyond the <a href="2_AD2_Algorithm.html">algorithm method</a> by allowing you to switch between entirely different circuit topologies — not just parameter changes. AD2 pre-calculates the minimal data needed to transition between any two circuit configurations and generates it as arrays, which are stored directly in your microcontroller's memory and sent to the FPAA over SPI. </p>
+<p>Since the transition data is pre-calculated, this method is also better suited for microcontrollers with limited memory or computing power. And because the generated code is integrated directly into your own project, no microcontroller needs to be connected to the AD2 software.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The following steps apply regardless of which microcontroller you are using to program the FPAA.</p>
+</div>
+<p>Create your FPAA design. For this example I am going to use the same design used in the <a href="https://cdn.shopify.com/s/files/1/0568/0260/7162/files/FlexAnalog-AN305B-State-Driven_Control_using_a_Microchip_PIC.pdf?v=1742515381">AN305B application note</a>.</p>
+<p><img src="img/1_ad2_an305b_note.png" width="100%"></p>
+<h3 id="primary-configuration-code">Primary Configuration Code</h3>
+<p>The first thing to be done is to create the primary configuration data that will contain the CAMs information and respective connections.</p>
+<ul>
+<li>Go to "Dynamic Config." and select "State-driven Method"</li>
+</ul>
+<p><img src="img/1_ad2_sd_p1.png" width="70%"></p>
+<ul>
+<li>Next, select the "States" tab and press the "Complete Chips" button.</li>
+<li>Select FPAA1 and press "Ok"</li>
+</ul>
+<p><img src="img/1_ad2_sd_p2.png" width="80%"></p>
+<ul>
+<li>Select the "Transitions" tab and check the FPAA1 checkbox to indicate that this is the primary sate.</li>
+</ul>
+<p><img src="img/1_ad2_sd_p3.png" width="80%"></p>
+<ul>
+<li>Select the "Generation" tab, select "Generate C Formatted Configuration Text Files".</li>
+<li>Also, click on "All transitions in one file".</li>
+<li>Make sure that the destination directory is pointing to a directory that you are familiar with.</li>
+<li>Now click on the "Generate" button.</li>
+</ul>
+<p><img src="img/1_ad2_sd_p4.png" width="80%"></p>
+<ul>
+<li>A warning will come up saying that primary configurations will be generated but transitions will not. Click on "Ok".</li>
+</ul>
+<p><img src="img/1_ad2_sd_p5.png" width="80%"></p>
+<p><img src="img/1_ad2_sd_p6.png" width="80%"></p>
+<p>A text file will be generated that contains the primary configuration data.</p>
+<p><img src="img/1_ad2_sd_p7.gif" width="100%"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Have in mind that the size of the data is six greater than the size given at the top of the text file. This is because six dummy bytes have been added to the data, five at the start and one at the end.</p>
+<p>The code generated above should be copied and pasted into a C-code in the form of an array as shown in the next section.</p>
+</div>
+<h3 id="esp32-example">ESP32 Example</h3>
+<p>As an example, I am going to use an ESP32 board to configure the FPAA using this state-driven method. The ESP32 is connected to the SPI pins of a Single Apex board. Analog discovery 2 is used as the oscilloscope and function generator to evaluate the AD2 design.</p>
+<p><img src="img/1_ad2_sd_p9.png" width="100%"></p>
+<p><img src="img/1_ad2_sd_p10.png" width="60%"></p>
+<ul>
+<li>Download the firmware code (available under the GitHub Repository section) on the ESP32.</li>
+<li>Copy the primary configuration into the "primary_config" array in the FPAA_StateDriven.h header file.</li>
+</ul>
+<p><img src="img/1_ad2_sd_p8.png" width="100%"></p>
+<ul>
+<li>Compile and upload the code into the ESP32.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The firmware performs a software reset and then sends the primary configuration data over SPI. Since the ESP32 is not connected to the PORb pin, a software reset is used instead of a hardware reset — both produce the same result in this case.</p>
+</div>
+<p>The result on the oscilloscope is the following:</p>
+<ul>
+<li>Blue Line: output waveform from the FPAA (signal out)</li>
+<li>The output waveform is a sinusoidal waveform at 80kHz. Working as expected.</li>
+</ul>
+<p><img src="img/1_ad2_sd_p11.png" width="100%"></p>
+<h3 id="reconfiguration-data">Reconfiguration Data</h3>
+<p>Let's now create a reconfiguration file with parameters to change the frequency of the oscillator and the output gain.</p>
+<ul>
+<li>Go to "Dynamic Config." and select "State-driven Method"</li>
+</ul>
+<p><img src="img/1_ad2_sd_p1.png" width="70%"></p>
+<ul>
+<li>Under the "States" tab select "Parameter Ranges..."</li>
+</ul>
+<p><img src="img/1_ad2_sd_p12.png" width="70%"></p>
+<ul>
+<li>Enter a name in the box at the top for the parameter that is to be varied (doesn't matter what the name is but one must be entered).</li>
+<li>Now enter the desired ranges on the desired parameters. Make sure that you select values that are within valid parameters.</li>
+<li>Press "Ok".</li>
+</ul>
+<p><img src="img/1_ad2_sd_p13.png" width="70%"></p>
+<ul>
+<li>Under the "Transitions" tab the various states will be seen.</li>
+<li>Keep the FPAA1 checked as the primary configuration.</li>
+</ul>
+<p><img src="img/1_ad2_sd_p14.png" width="70%"></p>
+<ul>
+<li>Now select the "Generation" tab and click on "Generate" as before (same settings as before).</li>
+</ul>
+<p><img src="img/1_ad2_sd_p4.png" width="70%"></p>
+<ul>
+<li>A text file will be generated containing 31 sets of reconfiguration data: 5 oscillator frequencies across 6 gain settings, plus 1 additional state for the default configuration.</li>
+</ul>
+<p><img src="img/1_ad2_sd_p15.gif" width="100%"></p>
+<ul>
+<li>Going back to the ESP32 example, we can add code to iterate over the generated states.</li>
+<li>The primary configuration didn't change, no need to copy that data again.</li>
+<li>Copy the rest of the arrays into the same "FPAA_StateDriven.h" file as shown below.</li>
+</ul>
+<p><img src="img/1_ad2_sd_p16.gif" width="100%"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A software or hardware reset is only needed once to load the primary configuration.</p>
+</div>
+<ul>
+<li>Compile and upload the code into the ESP32.</li>
+</ul>
+<p>The result on the oscilloscope is the following:</p>
+<ul>
+<li>Blue Line: output waveform from the FPAA (signal out)</li>
+<li>The output is a sinusoidal waveform that sweeps from 40kHz to 100kHz in 15kHz steps, with the gain sweeping from 0.1 to 1 in steps of 0.2. Working as expected.</li>
+</ul>
+<p><img src="img/1_ad2_sd_p17.gif" width="100%"></p>
+<h2 id="otc231-example"><strong>OTC231 Example</strong></h2>
+<p>The OTC231 is an Arduino shield that connects directly on top of an Arduino Uno and features one AN231 FPAA. It includes built-in logic level shifters, an onboard 16MHz clock, Rauch filters for single-ended to differential signal conversion, difference amplifiers for differential to single-ended signal conversion, and footprints for SMA connectors or 3.5mm audio jacks.</p>
+<p><img src="img/0_OTC231_2v1.png" width="50%"></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The OTC2312 is designed specifically for the Arduino Uno. Do not use it with other Arduino boards unless you are confident they share the same GPIO logic levels.</p>
+</div>
+<p><img src="img/0_OTC231_Uno_pinout.png" width="100%"></p>
+<p><img src="img/0_OTC231_Uno_ad2.png" width="90%"></p>
+<ul>
+<li>The complete test setup is below.</li>
+</ul>
+<p><img src="img/1_OTC231_sd_p1.png" width="90%"></p>
+<p>This time lets recreate the design guide <a href="https://cdn.shopify.com/s/files/1/0568/0260/7162/files/FlexAnalog-AN316-How_to_generate_a_swept_frequency_signal.pdf?v=1742515381">AN316</a> - a simple three band equalizer.</p>
+<p><img src="img/1_OTC231_sd_p2.png" width="100%"></p>
+<ul>
+<li>Follow the same steps as the ones for the "Primary Configuration Code" above to generate the primary configuration data.</li>
+<li>Download the firmware code (available under the GitHub Repository section).</li>
+<li>Copy the primary configuration into the "primary_config" array in the FPAA_StateDriven.h header file.</li>
+<li>Compile and upload the code into the Arduino Uno.</li>
+</ul>
+<p>Conceptual overview of the FPAA signal chain:</p>
+<ul>
+<li><strong>Filter 1:</strong> First-order low-pass bilinear filter, 25kHz cutoff, gain of 1.</li>
+<li><strong>Filter 2:</strong> Second-order band-pass biquad filter, 200Hz cutoff, gain of 2, Q factor of 2.</li>
+<li><strong>Filter 3:</strong> Second-order band-pass biquad filter, 1kHz cutoff, gain of 1.9, Q factor of 100.</li>
+<li><strong>Filter 4:</strong> Second-order band-pass biquad filter, 5kHz cutoff, gain of 2, Q factor of 100.</li>
+<li><strong>Final Stage:</strong> Summing amplifier with a 25kHz cutoff and a gain of 1.2 on all 3 inputs."</li>
+</ul>
+<p><strong>FPAA Filter Response</strong></p>
+<p><img src="img/1_OTC231_sd_p3.gif" width="100%"></p>
+<p><strong>Time View</strong></p>
+<p>The result on the oscilloscope (time domain) is the following:</p>
+<ul>
+<li>Orange Line: generated waveform (signal in)</li>
+<li>Blue Line: output waveform from the FPAA (signal out)</li>
+<li>The input sweeps from 50Hz to 38kHz. The output shows clear amplification at 200Hz, 1kHz, and 5kHz, with significantly reduced amplitude at all other frequencies. Working as expected.</li>
+</ul>
+<p><img src="img/1_OTC231_sd_p4.gif" width="100%"></p>
+<p><strong>Frequency View</strong></p>
+<p>The result on the oscilloscope (frequency domain) is the following:</p>
+<ul>
+<li>Orange Line: generated waveform magnitude (signal in) </li>
+<li>Blue Line: output waveform magnitude from the FPAA (signal out) </li>
+<li>The input sweeps from 50Hz to 38kHz. The output shows clear amplification at 200Hz, 1kHz, and 5kHz, with significantly reduced amplitude at all other frequencies. Working as expected.</li>
+</ul>
+<p><img src="img/1_OTC231_sd_p5.gif" width="100%"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want to include reconfiguration data, follow the same steps from the previous example in the "Reconfiguration Data" section.</p>
+</div>
+<p>That is all for this article. Have fun 😊</p>
+<h2 id="github-repository"><strong>GitHub Repository</strong></h2>
+<ul>
+<li>Firmware code for <a href="https://github.com/gfm16617/EngrEDU_Website/blob/main/Okika/Firmware_Code/ESP32_WROOM_FPAA_SD1.zip">ESP32 State Driven Example</a></li>
+<li>Firmware code for <a href="">OTC231 State Driven Example</a></li>
+</ul>
+<h2 id="references"><strong>References</strong></h2>
+<ul>
+<li><a href="https://cdn.shopify.com/s/files/1/0568/0260/7162/files/FlexAnalog-AN305B-State-Driven_Control_using_a_Microchip_PIC.pdf?v=1742515381">App Note AN305B - State Driven Control using a Microchip PIC</a> - Okika Website</li>
+<li><a href="https://cdn.shopify.com/s/files/1/0568/0260/7162/files/FlexAnalog-AN316-How_to_generate_a_swept_frequency_signal.pdf?v=1742515381">Design Guide AN316 - How to Generate a Swept Frequency Signal</a> - Okika Website</li>
+<li><a href="https://help.okikadevices.com/index.html?page=html%2Fad203hf8.htm">Why Use State-Driven Dynamic Configuration</a> - AnadigmDesign2 Help</li>
+</ul>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+      
+        <script src="../../js/math.js"></script>
+      
+        <script src="../../js/kicanvas.js"></script>
+      
+    
+  </body>
+</html>

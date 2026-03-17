@@ -1,0 +1,54 @@
+---
+title: Bypass Test
+---
+## **Equipment Used**
+### FlexAnalog FPAA Board
+
+[AN231K04-SING1 Single FlexAnalog™ FPAA Development Board](https://okikadevices.com/products/an231k04-sing1-single-apex-development-board-for-an231e04)
+
+
+<img src="img/single_flexanalog_devBoard.png" width="50%">
+### Oscilloscope and Function Generator
+
+[Analog Discovery 2 (AD2)](https://digilent.com/shop/analog-discovery-2-100ms-s-usb-oscilloscope-logic-analyzer-and-variable-power-supply/?srsltid=AfmBOoql4mBZdnozKjvnp-mNehWk4NQReZckh_Q-MWvZeJa6kxbOP-0t)
+
+<img src="img/analog_discovery_2_digilent.png" width="50%">
+
+## **Hardware Connections Setup**
+
+asd
+
+## **Anadigm Software Setup**
+
+- Open AnadigmDesigner2
+- By default you will have the following working space
+
+<img src="img/2_as2_default_working_space.png" width="60%">
+
+!!! note
+	For this test you can use any pin that you want.
+ 
+- I will be using pin 01 and 02 (differential) as the input signal
+- And pin 15 and 16 (differential) as the output signal
+- Pin 01 corresponds to I1P and I1N
+
+## **AD2 Setup**
+
+- Open the function generator and enable a waveform of your choice.
+
+!!! warning
+	Make sure that your waveform is between 0 to 3.3V otherwise you can damage the FPAA board.
+
+
+<img src="img/2_ad2_waveform_specs.png" width="80%">
+
+- Open the scope and observe if the input
+- Orange Line: input waveform connected to pin I1P (input 1 positive)
+- Blue Line: output waveform connected to pin IO5P (input output 5 positive)
+
+<img src="img/2_ad2_waveform_scope.png" width="100%">
+
+
+## References
+
+[1] Using the Network Analyzer [[Digilent Article]](https://digilent.com/reference/test-and-measurement/guides/waveforms-network-analyzer?srsltid=AfmBOop49axZrZ3c80SywfI21JE0Zmjg64aXVmFmh1tXNjm51pNFOgFc)

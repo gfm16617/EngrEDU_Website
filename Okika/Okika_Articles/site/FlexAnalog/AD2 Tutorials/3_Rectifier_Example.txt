@@ -1,0 +1,41 @@
+---
+title: Rectifier Example
+---
+This tutorial goes over the exercise example described in the AnadigmDesigner2 Training Document 2 in the Application Notes section [1]. 
+
+The example extracts the fundamental frequency of a 5kHz square waveform and respective DC component.
+
+## Block Diagram
+
+The block diagram for the exercise is below.
+
+image
+
+- **Block 1:** a band pass filter (BPF) with a corner frequency at 5Kz, gain of 1 and a quality factor of 15
+- **Block 2:** A rectifier filter with a combined single pole low pass filter (LPF). Corner frequency of the LPF at 100 kHz, this lets through almost all the energy from the square wave, but blocks higher harmonics that may alias back
+- **Block 3:** A LPF to extract the DC value of the signal
+
+## Anadigm Designer & Frequency Response
+
+- **Block 1:** Band Pass Filter Configuration and Filter Response
+
+<img src="img/3_rectifier_block1_parameters.png" width="100%">
+
+<img src="img/3_rectifier_BPF_response.png" width="100%">
+
+- **Block 2:** Rectifier Filter Configuration and Frequency Response
+
+<img src="img/3_rectifier_block2_parameters.png" width="100%">
+
+<img src="img/3_rectifier_rectifier_response.png" width="100%">
+
+- **Block 3:** LPF Configuration and Frequency Response
+
+<img src="img/3_rectifier_LPF_parameters.png" width="100%">
+
+<img src="img/3_rectifier_block3_response.png" width="100%">
+
+## References
+
+[1] AnadigmDesigner2 Training Document 2 [[App Note]](https://okikadevices.com/pages/anadigmdesigner2-development-tools-training)
+
