@@ -1,0 +1,16 @@
+name: engpython
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - scipy
+  - matplotlib
+  - jupyterlab
+  - pandas
+  - opencv
+  - pyqt
+  - pyqtgraph
+  - pip
+  - pip:
+      - pyserial
