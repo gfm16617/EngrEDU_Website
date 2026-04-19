@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "VCO_PANEL_REV1-cache") (type "Legacy") (uri "C:/Goncalo/Software/KiCad/Projects/Eurorack_Modules/EngrEDU_Modules/16HP_VCO_1/VCO_PANEL_REV1/VCO_PANEL_REV1-cache.lib") (options "") (descr "Legacy project cache library"))
+)
