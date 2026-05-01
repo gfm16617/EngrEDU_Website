@@ -1,0 +1,35 @@
+Reference,Qty,Value,DNP,Exclude from BOM,Exclude from Board,Footprint,Mfr #,Mouser,Unit Price
+"C1,C2,C3,C4,C6,C8,C13,C14,C17,C22,C24,C26",12,0.1uF,,,,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C0805C104K4JACAUTO,https://www.mouser.com/ProductDetail/KEMET/C0805C104K4JACAUTO?qs=sGAEpiMZZMukHu%252BjC5l7YcDEhfSOZOpN7J4S%2FUXKmJA%3D,0.71
+C7,1,2.2uF,,,,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C0805X225K3RACAUTO,https://www.mouser.com/ProductDetail/KEMET/C0805X225K3RACAUTO?qs=sGAEpiMZZMukHu%252BjC5l7YT%2FM%252BmyCc%2FqmxcYow7XY82k%3D,0.86
+C9,1,10uF,,,,Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C_HandSolder,TPSC106M025R0500 ,https://www.mouser.com/ProductDetail/KYOCERA-AVX/TPSC106M025R0500?qs=xw8XwkEH2YUFzmRLhQ4HDw%3D%3D,0.9
+"C15,C16,C18,C23,C25",5,10uF,,,,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C0805C106K4PACTU,https://www.mouser.com/ProductDetail/KEMET/C0805C106K4PACTU?qs=sGAEpiMZZMukHu%252BjC5l7YSC4XbKrDVLQg534tyUdiI4%3D,0.16
+"C19,C20",2,22p,,,,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,08055C220KAT2A,https://www.mouser.com/ProductDetail/KYOCERA-AVX/08055C220KAT2A?qs=%252BdQmOuGyFcHsL9WawpqPNw%3D%3D,0.16
+C21,1,0.01uF,,,,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,KAF21BR72A103JT,https://www.mouser.com/ProductDetail/KYOCERA-AVX/KAF21BR72A103JT?qs=Jm2GQyTW%2Fbiu9dbnlAVfgQ%3D%3D,0.1
+D1,1,WS2812B,,,,LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm,FZ2812-5050,Digikey Part,0.66
+D2,1,USB_LED,,,,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,150080BS75000,https://www.mouser.com/ProductDetail/710-150080BS75000,0.19
+D3,1,3V3_LED,,,,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,150080BS75000,https://www.mouser.com/ProductDetail/710-150080BS75000,0.19
+D4,1,USER_LED,,,,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,150080BS75000,https://www.mouser.com/ProductDetail/710-150080BS75000,0.19
+D5,1,5V_LED,,,,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,150080BS75000,https://www.mouser.com/ProductDetail/710-150080BS75000,0.19
+F1,1,PTCSMD,,,,Fuse:Fuse_1812_4532Metric,MF-MSMF050-2 ,https://www.mouser.com/ProductDetail/652-MF-MSMF050-2,0.35
+J1,1,Conn_01x04,,,,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,,,
+J2,1,CONN_MPU6050,,,,Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical,,,
+J3,1,USB_C_Receptacle_USB2.0_14P,,,,Connector_USB:USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A,UJ20-C-H-C-4-SMT-TR ,https://www.mouser.com/ProductDetail/Same-Sky/UJ20-C-H-C-4-SMT-TR?qs=i8QVZAFTkqTaeFkL507bBA%3D%3D,0.57
+J4,1,ESP_Conn,,,,Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical,,,
+J5,1,BATT_CONN,,,,Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,,,
+J6,1,M1_CONN,,,,Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,,,
+J7,1,M2_CONN,,,,Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,,,
+J8,1,ENCODER_CONN,,,,Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical,,,
+J9,1,MT6701_CONN,,,,Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical,,,
+"R1,R6,R9,R10",4,1k,,,,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,TNPW08051K00FEEA,https://www.mouser.com/ProductDetail/Vishay-Dale/TNPW08051K00FEEA?qs=4CveT0Ftx0oXPRWW%252BDtRJw%3D%3D,0.13
+"R2,R17",2,10k,,,,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,CPF0805B10KE1,https://www.mouser.com/ProductDetail/279-CPF0805B10KE1,0.23
+"R3,R4",2,22R,,,,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,RCA080522R0FKEA,https://www.mouser.com/ProductDetail/71-RCA080522R0FKEA,0.18
+"R7,R8",2,5.1k,,,,Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder,CRCW06035K10FKEC,https://www.mouser.com/ProductDetail/Vishay-Dale/CRCW06035K10FKEC?qs=sGAEpiMZZMtlubZbdhIBIKbhzOdzan%2FGt7ImYW9MzNM%3D,0.25
+S3,1,REGULATOR_SWITCH,,,,SW_SLW-66527511-SMT-TR:SW_SLW-66527511-SMT-TR,SLW-66527511-SMT-TR ,https://www.mouser.com/ProductDetail/Same-Sky/SLW-66527511-SMT-TR?qs=1Kr7Jg1SGW%252BCp04CqrZlUg%3D%3D,0.46
+S4,1,RST_SWITCH,,,,SW_SLW-66527511-SMT-TR:SW_SLW-66527511-SMT-TR,SLW-66527511-SMT-TR ,https://www.mouser.com/ProductDetail/Same-Sky/SLW-66527511-SMT-TR?qs=1Kr7Jg1SGW%252BCp04CqrZlUg%3D%3D,0.46
+SW2,1,SW_uP_Reset,,,,SW_uP_Reset:SW_uP_Reset,4.34121E+11,https://www.mouser.com/ProductDetail/Wurth-Elektronik/434121025816?qs=wr8lucFkNMWyfcUAFbmtRw%3D%3D&srsltid=AfmBOoqmUzwVR0rhJCccY2qUadJOE4Zbjl9C5AaSfC2M-qOmMq9QkSd8,0.58
+U1,1,STM32F401RBTx,,,,Package_QFP:LQFP-64_10x10mm_P0.5mm,STM32F401RBT6 ,https://www.mouser.com/ProductDetail/STMicroelectronics/STM32F401RBT6?qs=4ccVDqXDOrn4COlKBEB%252BDA%3D%3D,4.96
+U2,1,TB6612FNG,,,,Package_SO:SSOP-24_5.3x8.2mm_P0.65mm,"TB6612FNG,C,8,EL ",https://www.mouser.com/ProductDetail/Toshiba/TB6612FNGC8EL?qs=rsevcuukUAy2UalRuv4E%2FQ%3D%3D,1.82
+U3,1,LD1117S50TR_SOT223,,,,Package_TO_SOT_SMD:SOT-223-3_TabPin2,LD1117S50TR ,https://www.mouser.com/ProductDetail/STMicroelectronics/LD1117S50TR?qs=eQN2Ig5lfEwsh0kTXN%2FkTg%3D%3D,0.39
+U5,1,USBLC6-2SC6,,,,Package_TO_SOT_SMD:SOT-23-6,USBLC6-2SC6 ,https://www.mouser.com/ProductDetail/511-USBLC6-2SC6,0.36
+U6,1,LD1117S33TR_SOT223,,,,Package_TO_SOT_SMD:SOT-223-3_TabPin2,LD1117S33TR ,https://www.mouser.com/ProductDetail/STMicroelectronics/LD1117S33TR?qs=edoyzKMbmhntQZx4BFmoqw%3D%3D,0.34
+Y3,1,16MHz,,,,Crystal:Crystal_SMD_Abracon_ABM8G-4Pin_3.2x2.5mm,ABM8-16.000MHZ-D1X-T ,https://www.mouser.com/ProductDetail/ABRACON/ABM8-16.000MHZ-D1X-T?qs=vLWxofP3U2w30ayrUAlCvg%3D%3D&srsltid=AfmBOooiNWtWT-IA7ZdvVyV7-fIjOSW66zYC3zO0IDFU50s-rFdXbPsT,0.43

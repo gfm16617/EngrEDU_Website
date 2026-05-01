@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "ES_Daisy_Pod_Rev5-eagle-import") (type "KiCad") (uri "${KIPRJMOD}/ES_Daisy_Pod_Rev5-eagle-import.kicad_sym") (options "") (descr ""))
+)

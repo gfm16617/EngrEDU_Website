@@ -1,0 +1,11 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "EEE1AA101SP") (type "KiCad") (uri "${KIPRJMOD}/components/EEE1AA101_Capacitor/EEE1AA101SP.pretty") (options "") (descr ""))
+	(lib (name "PEC11J-9220F-H0015") (type "KiCad") (uri "${KIPRJMOD}/components/PEC11J-9220F-H0015/PEC11J-9220F-H0015.pretty") (options "") (descr ""))
+	(lib (name "SJ2-35863B1-SMT-TR") (type "KiCad") (uri "${KIPRJMOD}/components/SJ2-35863B1-SMT-TR/SJ2-35863B1-SMT-TR.pretty") (options "") (descr ""))
+	(lib (name "RK10J12R0A0B") (type "KiCad") (uri "${KIPRJMOD}/components/RK10J12R0A0B/RK10J12R0A0B.pretty") (options "") (descr ""))
+	(lib (name "H11L1SR2M") (type "KiCad") (uri "${KIPRJMOD}/components/H11L1SR2M/H11L1SR2M.pretty") (options "") (descr ""))
+	(lib (name "SD103AWS-7-F") (type "KiCad") (uri "${KIPRJMOD}/components/SD103AWS-7-F/SD103AWS-7-F.pretty") (options "") (descr ""))
+	(lib (name "SOL150P350X210-4N") (type "KiCad") (uri "${KIPRJMOD}/components/CLVBA-FKA-CAEDH8BBB7A363/SOL150P350X210-4N.pretty") (options "") (descr ""))
+	(lib (name "SW_SKRPACE010") (type "KiCad") (uri "${KIPRJMOD}/components/SKRPACE010/SW_SKRPACE010.pretty") (options "") (descr ""))
+)

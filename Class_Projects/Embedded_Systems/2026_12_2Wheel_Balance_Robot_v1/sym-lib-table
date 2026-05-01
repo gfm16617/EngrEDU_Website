@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "SLW-66527511-SMT-TR") (type "KiCad") (uri "${KIPRJMOD}/components/SPDT_Slide_Switch/SLW-66527511-SMT-TR.kicad_sym") (options "") (descr ""))
+)

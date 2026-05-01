@@ -1,0 +1,54 @@
+### Footprint positions - created on 2026-05-01T01:25:54 ###
+### Printed by KiCad version 10.0.0
+## Unit = mm, Angle = deg.
+## Side : All
+# Ref     Val                           Package                                        PosX       PosY       Rot  Side
+A1        Electrosmith_Daisy_Seed_Rev4  Electrosmith_Daisy_Seed                      2.5956    39.5072   90.0000  top
+C1        470nF                         C_0805_2012Metric                           56.0706     8.6722   90.0000  top
+C2        470nF                         C_0805_2012Metric                           64.5206    21.2972    0.0000  top
+C3        100nF                         C_0805_2012Metric                           62.7206    18.2722   90.0000  top
+C4        100nF                         C_0805_2012Metric                           59.0956    17.4722    0.0000  top
+C5        100uF                         CAP_EEE1AA101SP                             71.1706     4.7222    0.0000  top
+C6        100uF                         CAP_EEE1AA101SP                             71.0956    12.4222    0.0000  top
+C7        100nF                         C_0805_2012Metric                           55.4856    50.2122  -90.0000  top
+D1        SD103AWS                      SOD2513X120N                                70.0856    52.8122   90.0000  top
+D2        CLVBA-FKA-CAEDH8BBB7A363      SOL150P350X210-4N                           24.6956     2.9472    0.0000  top
+D3        CLVBA-FKA-CAEDH8BBB7A363      SOL150P350X210-4N                           13.1306     2.8222    0.0000  top
+H1        MountingHole                  MountingHole_3.2mm_M3_Pad_Via                4.9706     5.4722    0.0000  top
+H2        MountingHole                  MountingHole_3.2mm_M3_Pad_Via               45.3706    49.0222    0.0000  top
+H3        MountingHole                  MountingHole_3.2mm_M3_Pad_Via               61.9206     5.2222    0.0000  top
+H4        MountingHole                  MountingHole_3.2mm_M3_Pad_Via               85.8706    55.9472    0.0000  top
+J1        MIDI_JACK_CONN                SJ235863B1SMTTR                             83.8680    45.2172  180.0000  top
+J2        AUDIO_IN_JACK_CONN            SJ235863B1SMTTR                             83.8650    32.7604  180.0000  top
+J3        AUDIO_OUT_JACK_CONN           SJ235863B1SMTTR                             83.8908    20.2414  180.0000  top
+J4        HEADPHONES_JACK_CONN          SJ235863B1SMTTR                             83.9412     7.7922  180.0000  top
+J5        OLED_CONN                     PinSocket_1x04_P2.54mm_Vertical             11.1184    35.0474   90.0000  top
+J6        USB_C_Receptacle_USB2.0_14P   USB_C_Receptacle_HCTL_HC-TYPE-C-16P-01A      2.5106    46.9222  -90.0000  top
+J7        OLED_CONN                     PinSocket_1x04_P2.54mm_Vertical             24.0006    58.0472   90.0000  top
+R1        33k                           R_0805_2012Metric                           65.2706    14.7722  -90.0000  top
+R2        33k                           R_0805_2012Metric                           60.4856    11.1922    0.0000  top
+R3        22k                           R_0805_2012Metric                           56.0706    12.3972   90.0000  top
+R4        22k                           R_0805_2012Metric                           65.2456    18.3722  -90.0000  top
+R5        0                             R_0805_2012Metric                           75.2606    53.3122  180.0000  top
+R6        0                             R_0805_2012Metric                           75.2481    51.1622  180.0000  top
+R7        0                             R_0805_2012Metric                           75.2356    57.7122  180.0000  top
+R8        0                             R_0805_2012Metric                           75.2106    55.5372  180.0000  top
+R9        220                           R_0805_2012Metric                           72.2106    52.4872  -90.0000  top
+R10       270                           R_0805_2012Metric                           55.4606    53.9872  -90.0000  top
+R11       1k                            R_0805_2012Metric                           14.8706     5.7472    0.0000  top
+R12       1k                            R_0805_2012Metric                           11.2206     5.7472    0.0000  top
+R13       1k                            R_0805_2012Metric                           16.9956     2.8472   90.0000  top
+R14       1k                            R_0805_2012Metric                           22.8206     5.8972    0.0000  top
+R15       1k                            R_0805_2012Metric                           26.6206     5.9222    0.0000  top
+R16       1k                            R_0805_2012Metric                           28.5706     2.9472   90.0000  top
+R17       5.1k                          R_0805_2012Metric                            8.7956    49.8222  -90.0000  top
+R18       5.1k                          R_0805_2012Metric                            8.8456    44.1472  -90.0000  top
+RV3       100k                          Potentiometer_Bourns_3386P_Vertical         35.7056    26.7572    0.0000  top
+RV4       100k                          Potentiometer_Bourns_3386P_Vertical         50.1056    26.9322    0.0000  top
+SW1       TACT_SW_1                     SW_SKRPACE010                               33.0458    17.5222    0.0000  top
+SW2       TACT_SW_2                     SW_SKRPACE010                               33.0958     9.7222    0.0000  top
+U1        TPA6110A2DGN                  HVSSOP-8-1EP_3x3mm_P0.65mm_EP1.57x1.89mm    60.5706    14.2972    0.0000  top
+U2        ROTARY_ENCODER                PEC11J9220FH0015                            65.0706    37.6472    0.0000  top
+U3        H11L1SR2M                     H11L1SR2M                                   62.6956    54.1222  180.0000  top
+VR1       VOLUME_POT                    RK10J12R0A0B                                45.4206     6.3972  180.0000  top
+## End

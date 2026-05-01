@@ -1,0 +1,198 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "CLVBA-FKA-CAEDH8BBB7A363" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "D" (id 0) (at -2.5441 10.1764 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "CLVBA-FKA-CAEDH8BBB7A363" (id 1) (at -2.54497 -10.1799 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Footprint" "CLVBA-FKA-CAEDH8BBB7A363:SOL150P350X210-4N" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MF" "Cree Inc." (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Description" "\n                        \n                            Red, Green, Blue (RGB) 622nm Red, 530nm Green, 470nm Blue LED Indication - Discrete 1.9V Red, 3V Green, 3V Blue 4-PLCC\n                        \n" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Package" "PLCC-4 Cree" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Price" "None" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Check_prices" "https://www.snapeda.com/parts/CLVBA-FKA-CAEDH8BBB7A363/Cree/view-part/?ref=eda" (id 8) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "STANDARD" "IPC-7351B" (id 9) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PARTREV" "N/A" (id 10) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "SnapEDA_Link" "https://www.snapeda.com/parts/CLVBA-FKA-CAEDH8BBB7A363/Cree/view-part/?ref=snap" (id 11) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MP" "CLVBA-FKA-CAEDH8BBB7A363" (id 12) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Availability" "In Stock" (id 13) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MANUFACTURER" "CREE" (id 14) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "CLVBA-FKA-CAEDH8BBB7A363_0_0"
+      (polyline
+        (pts (xy -10.16 5.08) (xy -5.08 7.62)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -5.08 7.62) (xy -5.08 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -5.08 5.08) (xy -5.08 2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -5.08 2.54) (xy -10.16 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -5.08 5.08) (xy 0.0 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 5.08) (xy 5.08 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 5.08 5.08) (xy 5.08 7.62)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 5.08 5.08) (xy 5.08 2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 5.08 7.62) (xy 10.16 5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 10.16 5.08) (xy 5.08 2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 5.08) (xy 0.0 -5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 5.08 -2.54) (xy 5.08 -5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 5.08 -5.08) (xy 5.08 -7.62)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 5.08 -7.62) (xy 10.16 -5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 10.16 -5.08) (xy 5.08 -2.54)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 5.08 -5.08) (xy 0.0 -5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 -5.08) (xy -10.16 -5.08)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 8.5725 8.255) (xy 10.16 10.795)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 10.16 10.795) (xy 9.525 9.2075)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 10.16 10.795) (xy 9.04875 9.525)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 6.82625 8.255) (xy 8.41375 10.795)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 8.41375 10.795) (xy 7.77875 9.2075)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 8.41375 10.795) (xy 7.3025 9.525)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 8.5725 -1.905) (xy 10.16 0.635)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 10.16 0.635) (xy 9.525 -0.9525)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 10.16 0.635) (xy 9.04875 -0.635)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 6.82625 -1.905) (xy 8.41375 0.635)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 8.41375 0.635) (xy 7.77875 -0.9525)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 8.41375 0.635) (xy 7.3025 -0.635)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -8.5725 8.255) (xy -10.16 10.795)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -10.16 10.795) (xy -9.525 9.2075)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -10.16 10.795) (xy -9.04875 9.525)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -6.82625 8.255) (xy -8.41375 10.795)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -8.41375 10.795) (xy -7.77875 9.2075)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -8.41375 10.795) (xy -7.3025 9.525)) (stroke (width 0.254))
+      )
+      (text "Red" (at -4.44688 6.98795 0)
+        (effects (font (size 1.27054 1.27054)) (justify bottom left))
+      )
+      (text "Green" (at 0.0 6.9987 0)
+        (effects (font (size 1.27249 1.27249)) (justify bottom left))
+      )
+      (text "Blue" (at 1.272 -3.18 0)
+        (effects (font (size 1.272 1.272)) (justify bottom left))
+      )
+      (rectangle (start -6.77333333333 -5.92666666667) (end 13.5466666667 9.31333333333)
+        (stroke (width 0.254)) (fill (type background))
+      )
+      (pin passive line (at -15.24 5.08 0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -15.24 -5.08 0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 15.24 -5.08 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 15.24 5.08 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "4"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)
