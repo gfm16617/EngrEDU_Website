@@ -1,0 +1,4 @@
+../Core/Src/ENGREDU_MT6701.c:13:6:MT6701_Init	16	static
+../Core/Src/ENGREDU_MT6701.c:18:10:MT6701_ReadRaw	40	static
+../Core/Src/ENGREDU_MT6701.c:41:6:MT6701_Update	32	static
+../Core/Src/ENGREDU_MT6701.c:95:6:MT6701_SetZero	16	static
