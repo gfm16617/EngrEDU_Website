@@ -1,0 +1,7 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "an231e04") (type "KiCad") (uri "${KIPRJMOD}/components/AN231E04/an231e04.kicad_sym") (options "") (descr ""))
+	(lib (name "ASE16000MHZLCT") (type "KiCad") (uri "${KIPRJMOD}/components/ASE16000MHZLCT/ASE16000MHZLCT.kicad_sym") (options "") (descr ""))
+	(lib (name "OPA1652AIDRGR") (type "KiCad") (uri "${KIPRJMOD}/components/OPA1652AIDRGR/OPA1652AIDRGR.kicad_sym") (options "") (descr ""))
+	(lib (name "LM2663MX_NOPB") (type "KiCad") (uri "${KIPRJMOD}/components/LM2663MX_NOPB/LM2663MX_NOPB.kicad_sym") (options "") (descr ""))
+)
